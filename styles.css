@@ -59,6 +59,23 @@ img {
 button {
     cursor: pointer;
 }
+.btn_lg {
+    color: #000;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: #F68A58;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    max-height: 2.5rem;
+    border: 0px solid #000000;
+}
+.btn_lg hr {
+    position: relative;
+    top: 4px;
+    left: -16px;
+    width: 140%;
+}
 .btn_xl {
     color: #ffffff;
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -68,6 +85,23 @@ button {
     padding: 1rem 3rem 1rem 3rem;
     border-radius: 20px;
     border: 0px solid #000000;
+}
+.tab_lg {
+    color: #000;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: transparent;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10px;
+    max-height: 2.5rem;
+    border: 0px solid #000000;
+}
+.tab_lg hr {
+    position: relative;
+    /* top: 4px; */
+    left: -16px;
+    width: 140%;
 }
 input[type='radio'] {
     accent-color: #000000;
@@ -102,6 +136,7 @@ input[type='radio'] {
     display: grid;
     grid-column: 1 / -1;
     padding: 2rem 0 2rem 0;
+    margin: 0 0 2rem 0;
     max-height: 4vh;
     background-color: #000000;
 }
@@ -143,6 +178,13 @@ input[type='radio'] {
     margin: 10px 0 0 0;
 }
 
+/* Subheader */
+
+#container_subheader_logo {
+    margin: -2rem 0 0 0;
+    /* border: 2px solid green; */
+}
+
 /* Section - Splash */
 
 .img_cover {
@@ -182,8 +224,7 @@ input[type='radio'] {
     grid-column: 2 / 10;
     /* text-align: center; */
     /* margin: 0 auto; */
-    padding: 2rem 0 0 0;
-    /* border: 1px solid green; */
+    /* padding: 2rem 0 0 0; */
 }
 
 #fsearch {
@@ -211,13 +252,10 @@ input[type='radio'] {
 #container_body_header {
     grid-column: 2 / 9;
     text-align: left;
-    /* border: 1px solid pink; */
 }
 #container_body_header h1 {
     display: inline;
-    /* border: 1px solid green; */
 }
-
 #container_carousel_header_01 {
     grid-column: 2 / 9;
     text-align: left;
@@ -239,15 +277,12 @@ input[type='radio'] {
     display: inline-block;
     width: 10rem;
     padding: 0 .5rem 0 0;
-    /* border: 1px solid aqua; */
 }
 .container_carousel_item {
     display: inline-block;
-    /* border: 1px solid red; */
 }
 .container_carousel_item h3 {
     margin: 0 0 0 0;
-    /* border: 1px solid red; */
 }
 
 /* Section - Footer */
@@ -288,6 +323,24 @@ input[type='radio'] {
     /* border: 1px solid green; */
 }
 .footer_nav_selected {
-    /* font-weight: 800; */
+    font-weight: 800;
     color: #F68A58;
+}
+#container_tabbed_nav {
+    text-align: center;
+    padding: 0 0 1rem 0;
+    /* border: 1px solid green; */
+}
+#container_tabbed_nav button {
+    margin: 0 1rem 0 1rem;
+}
+#container_tabbed_nav button hr {
+    border: 1px solid #000;
+}
+#container_menu {
+    text-align: left;
+    padding: 0 2rem 0 2rem;
+}
+#container_menu button {
+    margin: 0 1rem 0 0;
 }
