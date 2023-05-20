@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Grey Dog - Menu</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <!-- Tabbed Nav JS Script -->
+
+        <script>
+            function openCity(cityName) {
+              var i;
+              var x = document.getElementsByClassName("city");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              document.getElementById(cityName).style.display = "block";  
+            }
+        </script>
+    </head>
+      <body>
+      <div class="parent">
+
+        <div class="container_header">
+            <div class="btn_bell"><img src="images/btn_bell_circle_white.svg" alt="Button - Bell to call sever"/></div>
+            <!-- <div class="header_screen_title"><h6>Home</h6></div> -->
+            <div class="header_screen_title"><img src="images/img_logo_feastly_whitefork.png"></div>
+        </div>
+
+    <!-- Logo and Welcome Message -->
+
+    <!-- <div id="container_splash" class="col_10">
+        <img class="img_cover" src="images/img_QRCode_frame.svg" alt="image of QR Code">
+    </div> -->
+
+    <div id="container_subheader_logo" class="col_10">
+        <img src="images/TGD_Subheader.svg" alt="The Grey Dog logo and typeface"/>
+    </div>
+    <div id="container_table" class="col_10">
+        <h2>The Grey Dog<br><b>Table 12</b></h2>
+    </div>
+
+    <!-- Search Bar -->
+
+    <div class="container_searchbar">
+        <div class="input_searchfield">
+        <form action="/action_page.php">
+        <input type="text" id="fsearch" name="fsearch" placeholder="Search">
+        <button class="btn_search" type="submit"><img src="images/btn_search_black.svg" alt="Search button"></button></form>
+        <!-- <div class="container_btn_search"></div> -->
+        </div>
+    </div>
+    <div id="container_tabbed_nav" class="col_10">
+        <button class="tab_lg" onclick="openCity('London')">Breakfast<br><hr></button>
+        <button class="tab_lg" onclick="openCity('Paris')">Lunch & Dinner</button>
+        <button class="tab_lg" onclick="openCity('Tokyo')">Beverages</button>
+      </div>
+    <div id="container_menu" class="col_10">
+        <div id="London" class="city">
+        <h3>*Breakfast is served all day</h3><br>
+        <button class="btn_lg" onclick="openCity('London')">Sides<br></button>
+        <button class="btn_lg" onclick="openCity('London')">Shares<br></button>
+        <p>Grey Dog's Breakfast</p>
+         </div>
+        <div id="Paris" class="city" style="display:none">
+        <h2>Lunch & Dinner</h2>
+        <p>Paris is the capital of France.</p>
+        </div>
+        <div id="Tokyo" class="city" style="display:none">
+        <h2>Beverages</h2>
+        <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </div>
+
+    <!-- Footer Nav -->
+
+    </div>
+        <div class="footer">
+            <button onclick="location.href='home.html';"><img src="images/icon_nav_home_active.svg" alt="Navigation button - Home"><span class="footer_nav_selected">Home</span></button><button onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_gray.svg" alt="Navigation button - QR Scan">QR Scan</button><button><img src="images/icon_nav_myorder_default.svg" alt="Navigation button - Shopping Cart">My Order</button><button><img src="images/icon_nav_user_gray.svg" alt="Navigation button - User Profile">Profile</button>
+        </div>
+    </div> <!-- End of parent -->
+</body>
+</html>
