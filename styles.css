@@ -332,7 +332,7 @@ input[type='radio'] {
     /* border: 1px solid green; */
 }
 #container_tabbed_nav button {
-    margin: 0 1rem 0 1rem;
+    margin: 0 0.5rem 0 0.5rem;
 }
 #container_tabbed_nav button hr {
     border: 1px solid #000;
