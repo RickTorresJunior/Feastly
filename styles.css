@@ -288,7 +288,7 @@ input[type='radio'] {
     filter: drop-shadow(0 0 1rem #d7d7d7);
 }
 .footer button {
-    width: 22%;
+    width: 22.5%;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     text-transform: uppercase;
     color: #000;
@@ -313,4 +313,3 @@ input[type='radio'] {
     /* font-weight: 800; */
     color: #F68A58;
 }
-
