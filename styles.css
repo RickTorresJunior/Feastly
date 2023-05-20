@@ -111,7 +111,7 @@ input[type='radio'] {
     max-width: 1rem;
 }
 .header_screen_title {
-    grid-area: 1 / 4 / 2 / 9;
+    grid-area: 1 / 4 / 2 / 8;
     text-align: center;
 }
 .header_screen_title h6 {
@@ -119,10 +119,12 @@ input[type='radio'] {
     margin: 10px 0 0 0;
 }
 .header_screen_title img {
+    /* object-fit: contain; */
     max-width: 15rem;
+    /* border: 1px solid green; */
 }
 .btn_bell {
-    grid-area: 1 / 9 / 2 / 11;
+    grid-area: 1 / 8 / 2 / 11;
     /* align-self: center; */
     /* max-width: 3rem; */
 }
