@@ -45,8 +45,8 @@ h6 {
     font-size: 1.2rem;
 }
 .font_body {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
     line-height: 1.5;
     color: #000000;
 }
@@ -350,4 +350,28 @@ input[type='radio'] {
 }
 #container_menu button {
     margin: 0 1rem 0 0;
+}
+.card_xl {
+    display: grid;
+    grid-column: 1 / -1;
+    margin: 2rem 1rem 0 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #ebebeb;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.card_xl_img {
+    max-width: 10rem;
+    border-radius: 10px;
+}
+.card_xl > h4 > span {
+    float: right;
+}
+.card_xl h4 {
+    margin: 0.5rem 0 0 0;
+}
+.card_xl .font_body {
+    /* display: block; */
+    margin: 0 6rem 0 0;
+    /* border: 1px solid red; */
 }
