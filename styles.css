@@ -209,9 +209,7 @@ input[type='radio'] {
 #container_table h2 {
     font-size: 5vw;
     padding: 0 0 1rem 0;
-    /* color: #ffffff; */
 }
-
 /* .header_item {
     display: grid;
     grid-area: 5 / 1 / 6 / 10;
