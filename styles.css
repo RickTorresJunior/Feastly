@@ -336,7 +336,6 @@ input[type='radio'] {
     overflow-y: hidden;
     white-space: nowrap;
     height: 50px;
-    /* border: 1px solid green; */
 }
 #container_tabbed_nav button {
     margin: 0 0.5rem 0 0.5rem;
@@ -345,8 +344,17 @@ input[type='radio'] {
     border: 1px solid #000;
 }
 #container_menu {
+    display: inline;
     text-align: left;
-    padding: 0 2rem 0 2rem;
+    padding: 2rem 0 0 0;
+    /* border: 1px solid green; */
+}
+/* .item_category {
+    border: 1px solid magenta;
+} */
+#container_menu h3 {
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 1rem;
 }
 #container_menu button {
     margin: 0 1rem 0 0;
@@ -354,14 +362,20 @@ input[type='radio'] {
 .card_xl {
     display: grid;
     grid-column: 1 / -1;
-    margin: 2rem 1rem 0 1rem;
-    padding: 1rem 2rem 1rem 2rem;
+    margin: 0 1rem 2rem 1rem;
+    padding: 2rem 2rem 1rem 2rem;
     background-color: #ebebeb;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
 .card_xl_img {
-    max-width: 10rem;
+    object-fit: cover;
+    /* width: 70%; */
+    width: 78vw;
+    max-height: 10rem;
+    padding: 0 0 0.5rem 0;
+    /* object-position: 0 -10; */
+    /* object-fit:fill; */
     border-radius: 10px;
 }
 .card_xl > h4 > span {
@@ -372,6 +386,6 @@ input[type='radio'] {
 }
 .card_xl .font_body {
     /* display: block; */
-    margin: 0 6rem 0 0;
+    margin: 0 4rem 0 0;
     /* border: 1px solid red; */
 }
