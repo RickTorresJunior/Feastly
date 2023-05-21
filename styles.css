@@ -3,41 +3,45 @@
     src: url('fonts/Noir_regular.otf') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+    }
 html {
-scroll-behavior: smooth;
-} 
+    scroll-behavior: smooth;
+    } 
 body {
     margin: 0;
     padding: 0;
-}
+    }
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+    }
 h1 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 2rem;
     font-weight: 800;
     padding: 1rem 0 0 0;
     /* text-align: center; */
-}
+    }
 h2 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 2rem;
     font-weight: 100;
-}
+    }
 h3 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-}
+    }
 h4 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
-}
+    }
 h6 {
     font-family: 'Noir Regular';
     text-transform: uppercase;
     font-size: 2rem;
-}
+    }
 .font_subheader {
     color: #ffffff;
     text-align: center;
@@ -122,11 +126,17 @@ input[type='radio'] {
     text-align: center;
     /* border: 1px solid green; */
 }
+.col_10_left {
+    grid-column: 1 / 11;
+    /* border: 1px solid green; */
+}
 .col_8 {
     grid-column: 2 / 10;
     text-align: center;
 }
-
+.col_8_left {
+    grid-column: 2 / 10;
+}
 /* Section - Header */
 
 .container_header {
@@ -349,6 +359,12 @@ input[type='radio'] {
     padding: 1rem 0 0 0;
     /* border: 1px solid green; */
 }
+#container_menu_item {
+    display: inline;
+    text-align: left;
+    padding: 0 0 0 0;
+    /* border: 1px solid green; */
+}
 /* .item_category {
     border: 1px solid magenta;
 } */
@@ -384,8 +400,50 @@ input[type='radio'] {
 .card_xl h4 {
     margin: 0.5rem 0 0 0;
 }
-.card_xl .font_body {
-    /* display: block; */
+.card_xl .font_body_narrow {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
     margin: 0 4rem 0 0;
     /* border: 1px solid red; */
+}
+.card_xl .font_body {
+    margin: 0 0 0 0;
+    /* border: 1px solid red; */
+}
+.btn_icon_close {
+    position: relative;
+    top: 4px;
+    /* display: inline-block; */
+    padding: 0 4px 0 0;
+    max-width: 1.2rem;
+}
+.btn_ingredient {
+    font-size: 1rem;
+    background-color: #ffffff;
+    margin: 0 1vw 3vw 0;
+    border: 1px solid #a5a5a5;
+    border-radius: 6px;
+}
+.btn_label {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+}
+.form_default select {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 1rem 0 0 0;
+    padding: 0 0 0 1rem;
+}
+/* #container_item_options {
+    border: 1px solid green;
+} */
+#container_item_options h1 {
+    padding: 1rem 0 0;
 }
