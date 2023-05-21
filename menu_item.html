@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Grey Dog - Menu Item</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <!-- Tabbed Nav JS Script -->
+
+        <script>
+            function openCategory(item_category) {
+              var i;
+              var x = document.getElementsByClassName("item_category");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              document.getElementById(item_category).style.display = "block";  
+            }
+        </script>
+    </head>
+      <body>
+      <div class="parent">
+
+        <div class="container_header">
+            <div class="btn_bell"><img src="images/btn_bell_circle_white.svg" alt="Button - Bell to call sever"/></div>
+            <div class="header_screen_title"><img src="images/img_logo_feastly_whitefork.png"></div>
+        </div>
+
+        <!-- <div id="container_subheader_logo" class="col_10">
+        <img src="images/TGD_Subheader.svg" alt="The Grey Dog logo and typeface"/>
+        </div> -->
+        <!-- <div id="container_table_number" class="col_10">
+        <h4>Table 12</h4>
+        </div> -->
+
+        <!-- Container - Menu -->
+
+        <div id="container_menu_item" class="col_10">
+
+        <!-- Breakfast -->
+
+        <div id="Breakfast" class="item_category">
+        <div class="card_xl">
+            <img class="card_xl_img" src="images/photo_breakfast.png" alt="Image of eggs and bacon">
+            <h4>Grey Dog's Breakfast</h4>
+            <span class="font_body">Eggs any style, french toast or pancakes, home fries & bacon, sausage or avocado</span>
+        </div>
+        </div>
+    </div> <!-- End of Container - Menu -->
+    <div class="col_8_left">
+        <div class="container_ingredients">
+            <button class="btn_ingredient"><img class="btn_icon_close" src="images/btn_close_circle_black.svg" alt="remove ingredient button"><span class="btn_label">home fries</span></button>
+            <button class="btn_ingredient"><img class="btn_icon_close" src="images/btn_close_circle_black.svg" alt="remove ingredient button"><span class="btn_label">bacon</span></button>
+        </div>
+        <div id="container_item_options" class="col_8_left">
+        <h1>Eggs</h1>
+        <form class="form_default">
+            <label>How would you like them? *choose one</label>
+            <select>
+            <option value = "Fried">Fried 
+            </option>
+            <option value = "Scrambled">Scrambled 
+            </option>
+            <option value = "SunnySideUp">Sunny Side Up
+            </option>
+            <option value = "EggWhites">Egg Whites Only
+            </option>
+            </select>
+        </form>
+        </div>
+    </div>
+
+    <!-- Footer Nav -->
+
+    </div>
+        <div class="footer">
+            <button onclick="location.href='home.html';"><img src="images/icon_nav_home_active.svg" alt="Navigation button - Home"><span class="footer_nav_selected">Home</span></button><button onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_gray.svg" alt="Navigation button - QR Scan">QR Scan</button><button><img src="images/icon_nav_myorder_default.svg" alt="Navigation button - Shopping Cart">My Order</button><button><img src="images/icon_nav_user_gray.svg" alt="Navigation button - User Profile">Profile</button>
+        </div>
+        
+    </div> <!-- End of parent -->
+</body>
+</html>
