@@ -182,7 +182,6 @@ input[type='radio'] {
 
 #container_subheader_logo {
     margin: -2rem 0 0 0;
-    /* border: 2px solid green; */
 }
 
 /* Section - Splash */
@@ -206,7 +205,10 @@ input[type='radio'] {
     padding: 1rem 0 1rem 0;
     border: 2px solid red;
 }
-#container_table h2 {
+#container_table_number h4 {
+    margin: 1rem 0 1rem 0;
+}
+#container_table_number h2 {
     font-size: 5vw;
     padding: 0 0 1rem 0;
 }
