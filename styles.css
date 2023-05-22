@@ -470,13 +470,13 @@ input[type='radio'] {
 
 select, option, button {
     -webkit-appearance: none;
-  }
+}
   .select-wrapper {
     position: relative;
     display: inline-block;
     margin: 1rem 0 2rem 0;
-  }
-  .select-wrapper:after {
+}
+.select-wrapper:after {
       content: '\0025BC';
       font: normal normal normal 12px/1 FontAwesome;
       color: white;
@@ -486,12 +486,9 @@ select, option, button {
       padding: 15px 0px 0px 8px;
       position: absolute;
       pointer-events: none;
-  }
+}
   
-  .select-wrapper select > p,
-  input,
-  select,
-  option {
+.select-wrapper select > p, select, option {
         font-family: 'Zen Kaku Gothic New', sans-serif;
         font-size: 1rem;
         font-weight: 400;
@@ -502,15 +499,36 @@ select, option, button {
       color: #FFF;
       /* margin: 0; */
       padding: 0.5rem 1rem 0.5rem 1rem;
-  }
+}
   .select_wrapper select input,
   select,
   option {
       background-color: #333;
       border-radius: 1vh;
       border-color: transparent;
-  }
+}
   .select-wrapper select {
     min-width: 250px;
     padding-right: 24px;
-  }
+}
+
+/* Quantity Input */
+
+#myform {
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { 
+    width:25px;
+    height:25px;
+}
+input.qtyminus {
+    width:25px;
+    height:25px;
+}
