@@ -6,23 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>The Grey Dog - Menu Item</title>
         <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-        <!-- Tabbed Nav JS Script -->
-
-        <script>
-            function openCategory(item_category) {
-              var i;
-              var x = document.getElementsByClassName("item_category");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              document.getElementById(item_category).style.display = "block";  
-            }
-        </script>
+        <script src="script.js"></script>
     </head>
+
       <body>
       <div class="parent">
 
@@ -59,7 +49,7 @@
         </div>
         <div id="container_item_options" class="col_8_left">
         <h1>Eggs</h1>
-        <form class="form_default">
+        <!-- <form class="form_default">
             <label>How would you like them? *choose one</label>
             <select>
             <option value = "Fried">Fried 
@@ -71,9 +61,17 @@
             <option value = "EggWhites">Egg Whites Only
             </option>
             </select>
-        </form>
+        </form> -->
+        <select id="selectbox1">
+            <option value="">Select an option&hellip;</option>
+            <option value="aye">Aye</option>
+            <option value="eh">Eh</option>
+            <option value="ooh">Ooh</option>
+            <option value="whoop">Whoop</option>
+        </select>
         </div>
     </div>
+    
 
     <!-- Footer Nav -->
 
