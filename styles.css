@@ -526,14 +526,20 @@ select, option, button {
     /* background-color: red; */
 }
 input.qtyminus {
+    font-size: 2rem;
+    position: relative;
+    top: 4px;
     width:25px;
     height:25px;
     background: transparent;
     border: none;
 }
 input.qtyplus { 
+    font-size: 2rem;
+    position: relative;
+    top: 4px;
     width:25px;
-    height:25px;
+    /* height:25px; */
     background: transparent;
     border: none;
 }
