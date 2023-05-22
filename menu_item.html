@@ -7,10 +7,11 @@
         <title>The Grey Dog - Menu Item</title>
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="script.js"></script>
     </head>
 
@@ -80,7 +81,14 @@
                     <option>Avocado</option>
                     </select>
                 </div>
+                    <form id='myform' method='POST' class='quantity' action='#'>
+                        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                        <input type='text' name='quantity' value='0' class='qty' />
+                        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                      </form> 
             </div> <!-- End of Container - Options -->
+            <br>
+
             <div class="col_10">
             <button class="btn_xxl">Add 1 to Cart - $18.50</button>
             </div>
