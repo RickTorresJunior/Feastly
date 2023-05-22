@@ -455,7 +455,7 @@ input[type='radio'] {
 
 /* Dropdown Menu */
 
-select, option {
+select, option, button {
     -webkit-appearance: none;
   }
   .select-wrapper {
