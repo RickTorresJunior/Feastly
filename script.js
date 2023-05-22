@@ -10,3 +10,20 @@ function openCategory(item_category) {
     }
     document.getElementById(item_category).style.display = "block";  
   }
+
+  jQuery(document).ready(($) => {
+    $('.quantity').on('click', '.plus', function(e) {
+        let $input = $(this).prev('input.qty');
+        let val = parseInt($input.val());
+        $input.val( val+1 ).change();
+    });
+
+    $('.quantity').on('click', '.minus', 
+        function(e) {
+        let $input = $(this).next('input.qty');
+        var val = parseInt($input.val());
+        if (val > 0) {
+            $input.val( val-1 ).change();
+        } 
+    });
+});
