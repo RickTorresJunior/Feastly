@@ -466,35 +466,47 @@ select, option {
       content: '\0025BC';
       font: normal normal normal 12px/1 FontAwesome;
       color: white;
-      right: 14px;
-      top: 4px;
+      right: 20px;
+      top: 2px;
       height: 26px;
       padding: 15px 0px 0px 8px;
       position: absolute;
       pointer-events: none;
   }
   
-  p,
+  .select-wrapper select > p,
   input,
   select,
-  option,
-  button {
-      font-family: Arial, ArialHebrew, sans-serif;
+  option {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        /* padding: 1rem 0 0 0; */
+      /* font-family: 'Times New Roman', Times, serif;
       font-size: x-large;
-      text-align: center;
+      text-align: center; */
       color: #FFF;
-      margin: 1vh;
-      padding: 1vh;
+      /* margin: 0; */
+      padding: 0.5rem 1rem 0.5rem 1rem;
   }
+/* 
+  .select-wrapper button {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    margin: 1vh;
+    padding: 1vh;
+  } */
   
-  input,
+  .select_wrapper select input,
   select,
-  option,
-  button {
+  option {
       background-color: #333;
       border-radius: 1vh;
       border-color: transparent;
   }
-  select {
+  .select-wrapper select {
+    min-width: 250px;
     padding-right: 24px;
   }
