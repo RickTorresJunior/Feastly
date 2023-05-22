@@ -439,7 +439,7 @@ input[type='radio'] {
     font-weight: 500;
     line-height: 1.5;
     margin: 1rem 0 0 0;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 16px 1rem 16px 1rem;
     width: 50vw;
     /* background-color: red; */
     border-radius: 10px;
