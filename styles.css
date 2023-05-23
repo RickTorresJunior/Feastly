@@ -418,7 +418,7 @@ input[type='radio'] {
     border-radius: 10px;
 }
 .card_xl_img {
-    display: none;
+    /* display: none; */
     object-fit: cover;
     /* width: 70%; */
     width: 78vw;
