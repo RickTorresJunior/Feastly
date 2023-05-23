@@ -82,9 +82,12 @@
                     </select>
                 </div>
                     <form id='myform' method='POST' class='quantity' action='#'>
-                        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                        <!-- <input type='button' value='-' class='qtyminus minus' field='quantity'/> -->
+                        <button type="button" class='qtyminus minus' field='quantity'>
+                            <img class="btn_quantity" src="images/btn_minus.svg"/>
+                          </button>
                         <input type='text' name='quantity' value='0' class='qty' />
-                        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                        <input type='button' value='+' class='qtyplus plus' field='quantity'/>
                       </form> 
             </div> <!-- End of Container - Options -->
             <br>
