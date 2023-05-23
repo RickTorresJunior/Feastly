@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
     }
+    @font-face {
+        font-family: 'Noir Medium';
+        src: url('fonts/Noir_medium.otf') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
 html {
     scroll-behavior: smooth;
     } 
@@ -19,16 +25,25 @@ a, a:visited {
     text-decoration: none;
     }
 h1 {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 2rem;
+    font-family: 'Noir';
+    font-size: 2.25rem;
     font-weight: 800;
     padding: 1rem 0 0 0;
     /* text-align: center; */
     }
-h2 {
+.pink {
+    font-weight: bold;
+    color: #C7809A;
+}
+/* h2 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 2rem;
     font-weight: 100;
+    } */
+h2 {
+    font-family: 'Noir';
+    font-size: 1.5rem;
+    font-weight: 800;
     }
 h3 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -53,7 +68,7 @@ h6 {
 }
 .font_body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     color: #000000;
 }
@@ -254,7 +269,10 @@ input[type='radio'] {
 }
 
 #fsearch {
-    font-size: 1.2rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
     height: 2rem;
     width: 76vw;
     /* width: 80vw; */
@@ -288,7 +306,8 @@ input[type='radio'] {
     /* border: 1px solid pink; */
 }
 .header_carousel {
-    display: inline;
+    /* display: inline; */
+    margin: 1rem 0 0 0;
 }
 #container_carousel_01 {
     grid-column: 2 / -1;
@@ -320,6 +339,7 @@ input[type='radio'] {
     left: 0;
     bottom: 0;
     width: 100%;
+    max-height: 8rem;
     background-color: #000000;
     background-color: #ffffff;
     color: white;
@@ -392,12 +412,13 @@ input[type='radio'] {
     display: grid;
     grid-column: 1 / -1;
     margin: 0 1rem 2rem 1rem;
-    padding: 2rem 2rem 1rem 1.5rem;
+    padding: 0.5rem 2rem 1rem 1.5rem;
     background-color: #ebebeb;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
 .card_xl_img {
+    display: none;
     object-fit: cover;
     /* width: 70%; */
     width: 78vw;
@@ -468,7 +489,7 @@ input[type='radio'] {
 
 /* Dropdown Menu */
 
-select, option, button {
+select, option, button, a {
     -webkit-appearance: none;
 }
   .select-wrapper {
@@ -515,7 +536,7 @@ select, option, button {
 /* Quantity Input */
 
 #myform {
-    padding: 5px;
+    padding: 0 0 2rem 0;
     /* border: 1px dotted #ccc; */
     /* margin: 2%; */
 }
