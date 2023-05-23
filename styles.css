@@ -559,26 +559,16 @@ select, option, button, a {
     border: none;
 } */
 .qtyminus {
-    /* font-size: 2rem;
-    position: relative;
-    top: 4px;
-    width:25px;
-    height:25px; */
     width: 3rem;
     position: relative;
     top: 10px;
     border: none;
     background: transparent;
 }
-/* .btn_quantity {
-    border: 1px solid red;
-    background: transparent;
-} */
-input.qtyplus { 
-    font-size: 2rem;
+.qtyplus { 
+    width: 3rem;
     position: relative;
-    top: 4px;
-    width:25px;
-    background: transparent;
+    top: 10px;
     border: none;
+    background: transparent;
 }
