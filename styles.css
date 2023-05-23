@@ -559,7 +559,7 @@ select, option, button, a {
     border: none;
 } */
 .qtyminus {
-    width: 12%;
+    width: 3rem;
     max-width: 40px;
     position: relative;
     top: 10px;
