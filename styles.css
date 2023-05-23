@@ -10,6 +10,10 @@
         font-weight: normal;
         font-style: normal;
         }
+
+select, option, button, a {
+            -webkit-appearance: none;
+    }
 html {
     scroll-behavior: smooth;
     } 
@@ -492,9 +496,6 @@ input[type='radio'] {
 
 /* Dropdown Menu */
 
-select, option, button, a {
-    -webkit-appearance: none;
-}
   .select-wrapper {
     position: relative;
     display: inline-block;
@@ -562,15 +563,15 @@ select, option, button, a {
     width: 3rem;
     max-width: 40px;
     position: relative;
-    top: 10px;
+    top: 0.5rem;
     border: none;
     background: transparent;
 }
 .qtyplus { 
-    width: 12%;
+    width: 3rem;
     max-width: 40px;
     position: relative;
-    top: 10px;
+    top: 0.5rem;
     border: none;
     background: transparent;
 }
