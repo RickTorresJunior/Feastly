@@ -559,14 +559,16 @@ select, option, button, a {
     border: none;
 } */
 .qtyminus {
-    width: 3rem;
+    width: 12%;
+    max-width: 40px;
     position: relative;
     top: 10px;
     border: none;
     background: transparent;
 }
 .qtyplus { 
-    width: 3rem;
+    width: 12%;
+    max-width: 40px;
     position: relative;
     top: 10px;
     border: none;
