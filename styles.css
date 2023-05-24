@@ -35,15 +35,6 @@ h1 {
     padding: 1rem 0 0 0;
     /* text-align: center; */
     }
-.pink {
-    font-weight: bold;
-    color: #C7809A;
-}
-/* h2 {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 2rem;
-    font-weight: 100;
-    } */
 h2 {
     font-family: 'Noir';
     font-size: 1.5rem;
@@ -183,7 +174,7 @@ input[type='radio'] {
     padding: 2rem 0 2rem 0;
     margin: 0 0 2rem 0;
     max-height: 4vh;
-    background-color: #000000;
+    background-color: #fff;
 }
 .btn_header_back {
     grid-area: 1 / 2 / 2 / 3;
@@ -213,11 +204,16 @@ input[type='radio'] {
     max-height: 2.75rem;
     /* border: 1px solid green; */
   }
-.header_screen_title_btn_back {
-    grid-area: 1 / 2 / 2 / 11;
-    text-align: center;
+.btn_back {
+    grid-area: 1 / 2 / 2 / 3;
+    /* object-fit:cover; */
+    /* text-align: center; */
     /* border: 1px solid orange; */
-}
+}.btn_back > img {
+    object-fit:contain;
+    max-height: 2.75rem;
+    /* border: 1px solid green; */
+  }
 .header_screen_title_btn_back h6 {
     color: #ffffff;
     margin: 10px 0 0 0;
@@ -266,32 +262,48 @@ input[type='radio'] {
 /* Screen - Home */
 
 .container_searchbar {
-    grid-column: 2 / 10;
+    display: grid;
+    grid-column: 1 / -1;
     /* text-align: center; */
     /* margin: 0 auto; */
     /* padding: 2rem 0 0 0; */
 }
-
+#container_searchfield {
+    grid-column: 4 / 8;
+}
 #fsearch {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
     color: #000;
     font-weight: 600;
     height: 2rem;
-    width: 76vw;
+    /* width: 86vw; */
+    margin: 0 1.5rem 0 1rem;
+    /* width: 76vw; */
     /* width: 80vw; */
     padding: 0.5rem 0 0.5rem 1rem;
     border: 1px solid gray;
     border-radius: 10px;
 }
+
+#input_searchfield {
+    display: grid;
+    grid-column: 1 / -1;
+}
+#container_btn_search {
+    display: grid;
+    grid-column: 8 / 10;
+}
 .btn_search {
-    float: right;
+    /* float: right; */
     position: relative;
-    left: -4vw;
+    left: 36%;
+    /* left: -10vw; */
     top: -40px;
     background: transparent;
-    border: none;
+    border: none; 
 }
+
 .btn_search img {
     width: 1.5rem;
     object-fit: fill;
