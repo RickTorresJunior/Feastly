@@ -193,9 +193,13 @@ input[type='radio'] {
     max-height: 4vh;
     background-color: #fff;
 }
-#container_header_nobackbutton .btn_back {
-    transform: scale(0);
+#container_header_no_btn_back .btn_back {
+    visibility: hidden;
+}
+#container_header_logo .btn_back, .btn_avatar {
+    visibility: hidden;
     /* opacity: 0; */
+    /* transform: scale(0); */
 }
 .btn_header_back {
     grid-area: 1 / 2 / 2 / 3;
@@ -214,12 +218,12 @@ input[type='radio'] {
     /* object-fit: contain; */
     max-width: 10rem;
 }
-.btn_bell {
+.btn_avatar {
     grid-area: 1 / 8 / 2 / 11;
     /* align-self: center; */
     /* max-width: 3rem; */
 }
-.btn_bell > img {
+.btn_avatar > img {
     object-fit:contain;
     max-height: 2.75rem;
     /* border: 1px solid green; */
@@ -282,6 +286,12 @@ input[type='radio'] {
     display: grid;
     grid-column: 1 / 11;
 }
+.container_searchbar img {
+    position: relative;
+    top: -2.25rem;
+    margin: 0 0 0 86vw;
+    max-width: 1.25rem;
+}
 #container_searchfield {
     grid-column: 4 / 8;
 }
@@ -297,7 +307,6 @@ input[type='radio'] {
     border: 2px solid #F68A58;
     border-radius: 10px;
 }
-
 #input_searchfield {
     display: grid;
     grid-column: 1 / -1;
@@ -449,15 +458,7 @@ input[type='radio'] {
 }
 .card_xl_img {
     object-fit: cover;
-    /* display: none; */
-    /* object-fit: cover; */
-    /* width: 70%; */
-    /* width: 78vw; */
-    /* max-height: 10rem; */
-    /* padding: 1rem 0 0.5rem 0; */
-    /* object-position: 0 -10; */
     margin: 1rem 0 0 0;
-    /* border: 1px solid red; */
     border-radius: 10px;
 }
 .card_xl > h4 > span {
@@ -537,7 +538,6 @@ input[type='radio'] {
       position: absolute;
       pointer-events: none;
 }
-  
 .select-wrapper select > p, select, option {
         font-family: 'Zen Kaku Gothic New', sans-serif;
         font-size: 1rem;
@@ -550,9 +550,7 @@ input[type='radio'] {
       /* margin: 0; */
       padding: 0.5rem 1rem 0.5rem 1rem;
 }
-  .select_wrapper select input,
-  select,
-  option {
+  .select_wrapper select input, select, option {
       background-color: #333;
       border-radius: 1vh;
       border-color: transparent;
@@ -566,8 +564,6 @@ input[type='radio'] {
 
 #myform {
     padding: 0 0 2rem 0;
-    /* border: 1px dotted #ccc; */
-    /* margin: 2%; */
 }
 .qty {
     width: 40px;
@@ -575,15 +571,6 @@ input[type='radio'] {
     text-align: center;
     /* background-color: red; */
 }
-/* input.qtyminus {
-    font-size: 2rem;
-    position: relative;
-    top: 4px;
-    width:25px;
-    height:25px;
-    background: transparent;
-    border: none;
-} */
 .qtyminus {
     width: 3rem;
     max-width: 40px;
