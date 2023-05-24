@@ -278,7 +278,7 @@ input[type='radio'] {
 
 .container_searchbar {
     display: grid;
-    grid-column: 1 / -1;
+    grid-column: 1 / 11;
 }
 #container_searchfield {
     grid-column: 4 / 8;
