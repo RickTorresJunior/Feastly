@@ -191,6 +191,10 @@ input[type='radio'] {
     max-height: 4vh;
     background-color: #fff;
 }
+#container_header_nobackbutton .btn_back {
+    transform: scale(0);
+    /* opacity: 0; */
+}
 .btn_header_back {
     grid-area: 1 / 2 / 2 / 3;
     align-self: center;
