@@ -157,7 +157,7 @@ input[type='radio'] {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     scroll-behavior: smooth;
-    padding: 0 0 16rem 0;
+    padding: 0 0 8rem 0;
 }
 
 /* Column Width Classes */
@@ -290,7 +290,7 @@ input[type='radio'] {
     font-weight: 600;
     height: 2rem;
     /* width: 86vw; */
-    margin: 0 1.5rem 0 1rem;
+    margin: 0 1rem 0 1rem;
     padding: 0.5rem 0 0.5rem 1rem;
     border: 2px solid #F68A58;
     border-radius: 10px;
@@ -315,11 +315,12 @@ input[type='radio'] {
     border: none;
     /* border: 2px solid magenta; */
 }
-
 .btn_search img {
     width: 1.5rem;
     object-fit: fill;
-} 
+}
+
+/* Header & Carousels */
 
 #container_body_header {
     grid-column: 2 / 9;
