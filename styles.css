@@ -212,7 +212,7 @@ input[type='radio'] {
 }
 .header_screen_title img {
     /* object-fit: contain; */
-    max-width: 12rem;
+    max-width: 10rem;
 }
 .btn_bell {
     grid-area: 1 / 8 / 2 / 11;
@@ -371,8 +371,8 @@ input[type='radio'] {
     bottom: 0;
     width: 100%;
     /* max-height: 8rem; */
-    background-color: #fff;
     color: #fff;
+    background-color: #fff;
     text-align: center;
     filter: drop-shadow(0 0 1rem #d7d7d7);
 }
@@ -394,7 +394,7 @@ input[type='radio'] {
     display: block;
     margin: 0 auto;
     padding: 0 0 0.5rem 0;
-    height: 2rem;
+    height: 1.5rem;
     width: auto;
     /* max-height: 1rem; */
     /* border: 1px solid green; */
@@ -403,12 +403,11 @@ input[type='radio'] {
     font-weight: 800;
     color: #F68A58;
 }
+
+/* Menu - Tabbed Nav & Menu */
+
 #container_tabbed_nav {
     text-align: center;
-    /* padding: 0 3rem 0 3rem; */
-    /* grid-column: 2 / -1;
-    padding: 0.5rem 0 0 0;
-    margin: 0 0 2rem 0; */
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
