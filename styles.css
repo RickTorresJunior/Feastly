@@ -51,9 +51,10 @@ h1 {
     /* text-align: center; */
     }
 h2 {
-    font-family: 'noirnoir_regular';
+    font-family: 'noirmedium';
+    /* font-family: 'noirnoir_regular'; */
     font-size: 1.25rem;
-    font-weight: 800;
+    /* font-weight: 800; */
     }
 h3 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
