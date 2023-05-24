@@ -48,7 +48,6 @@ h1 {
     font-size: 2.25rem;
     font-weight: 100;
     padding: 1rem 0 0 0;
-    color: red;
     /* text-align: center; */
     }
 h2 {
@@ -366,12 +365,12 @@ input[type='radio'] {
     width: 100%;
     /* max-height: 8rem; */
     background-color: #fff;
-    color: white;
+    color: #fff;
     text-align: center;
     filter: drop-shadow(0 0 1rem #d7d7d7);
 }
 .footer button {
-    width: 22.5%;
+    width: 21.5%;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     text-transform: uppercase;
     white-space: nowrap;
