@@ -54,7 +54,7 @@ h2 {
     font-family: 'noirmedium';
     /* font-family: 'noirnoir_regular'; */
     font-size: 1.25rem;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     /* font-weight: 800; */
     }
 h3 {
@@ -193,6 +193,9 @@ input[type='radio'] {
     max-height: 4vh;
     background-color: #fff;
 }
+#container_header_default .btn_avatar {
+    visibility: visible;
+}
 #container_header_no_btn_back .btn_back {
     visibility: hidden;
 }
@@ -306,9 +309,9 @@ input[type='radio'] {
 
 /* Subheader */
 
-#container_subheader_logo {
+/* #container_subheader_logo {
     margin: -2rem 0 0 0;
-}
+} */
 
 /* Section - Splash */
 
