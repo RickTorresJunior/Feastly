@@ -9,14 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="script.js"></script> 
       </head>
       <body>
       <div class="parent">
 
-        <div class="container_header">
-            <div class="btn_header_back"><img src="images/btn_back_arrow.svg" alt="The Grey Dog logo and typeface"/></div>
-            <div class="header_screen_title_btn_back"><h6>QR SCAN</h6></div>
-            <!-- <div class="btn_hamburger"><img src="images/btn_hamburger.svg" alt="The Grey Dog logo and typeface"/></div> -->
+        <div id="container_header_btn_avatar" class="container_header">
+            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Bell to call sever"/></div>
+            <div class="header_screen_title"><img src="images/btn_feastly_logo.png"></div>
+            <div class="btn_avatar"><img src="images/btn_avatar_server.png" alt="Button - alert server"/></div>
+            <!-- <div class="header_screen_title"><h6>Home</h6></div> -->
         </div>
 
         <!-- Logo and Welcome Message -->
@@ -25,14 +27,17 @@
             <img class="img_cover" src="images/img_QRCode_frame.svg" alt="image of QR Code">
         </div>
 
-        <div id="container_logo_tgd" class="col_10">
+        <!-- <div id="container_logo_tgd" class="col_10">
             <img src="images/TGD_Subheader.svg" alt="The Grey Dog logo and typeface"/>
+        </div> -->
+        <div id="container_logo_tgd_circle">
+            <img src="images/img_logo_thegreydog_circle.png" alt="The Grey Dog logo and typeface"/><span class="font_body">The Grey Dog</span>
         </div>
-        <div id="container_table" class="col_10">
-            <h2>Welcome back, Sarah!<br><b>Table 12</b></h2>
+        <div id="container_table_number" class="col_10">
+            <h4>Welcome back, Sarah!<br>Table 12</h4>
         </div>
         <div id="container_btn_startordering" class="col_10">
-            <button class="btn_xl">Start Ordering!</button>
+            <button class="btn_xxl">Start Ordering!</button>
         </div>
 
         <!-- Footer -->
