@@ -155,7 +155,7 @@ button {
     font-family: 'noirnoir_regular';
     font-size: 1.25rem;
     font-weight: 100;
-    color: red;
+    color: #000;
     padding: 1rem 0 0 0;
     /* font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
@@ -165,6 +165,12 @@ button {
     border-radius: 10px;
     max-height: 2.5rem;
     border: none;
+}
+.tab_lg a {
+    color: #000;
+}
+.tab_lg a:visited {
+    color: #000;
 }
 .tab_lg hr {
     position: relative;
