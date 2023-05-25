@@ -531,12 +531,20 @@ input[type='radio'] {
     border-radius: 10px;
 }
 .card_xl > h5 {
-    display: inline;
+    display: grid;
+    grid-column: 1 / -1;
+    line-height: 1.25;
     margin: 0.5rem 0 0 0;
     /* padding: 0; */
 }
-.card_xl > h5 > span {
-    float: right;
+.card_xl > .menu_price {
+    display: grid;
+    grid-column: 10 / 11;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: right;
+    align-self: last baseline;
 }
 .card_xl i {
     font-weight: 400;
@@ -552,7 +560,6 @@ input[type='radio'] {
 }
 .card_xl .font_body {
     margin: 0 0 0 0;
-    /* border: 1px solid red; */
 }
 .container_ingredients {
     margin: 0 0 1rem 0;
