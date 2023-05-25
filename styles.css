@@ -378,15 +378,17 @@ input[type='radio'] {
 /* Header & Carousels */
 
 #container_body_header {
-    grid-column: 2 / 9;
+    grid-column: 1 / 9;
+    margin: 0 0 0 1rem;
     text-align: left;
 }
 #container_body_header h1 {
     display: inline;
 }
 #container_carousel_header_01 {
-    grid-column: 2 / 9;
+    grid-column: 1 / 9;
     text-align: left;
+    margin: 0 0 0 1rem;
     /* border: 1px solid pink; */
 }
 .header_carousel {
@@ -394,9 +396,9 @@ input[type='radio'] {
     margin: 1rem 0 0 0;
 }
 #container_carousel_01 {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
     padding: 0.5rem 0 0 0;
-    margin: 0 0 2rem 0;
+    margin: 0 0 2rem 1rem;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
@@ -535,6 +537,9 @@ input[type='radio'] {
 }
 .card_xl > h5 > span {
     float: right;
+}
+.card_xl i {
+    font-weight: 400;
 }
 .card_xl h4 {
     margin: 0.5rem 0 0 0;
