@@ -537,7 +537,7 @@ input[type='radio'] {
 }
 .card_xl_title {
     grid-area: a;
-    grid-column: 1 / 8;
+    grid-column: 1 / 9;
 }
 .card_xl_title h5 {
     display: inline;
@@ -547,7 +547,6 @@ input[type='radio'] {
     align-self: end;
     grid-column: 10 / 11;
     /* grid-area: auto / 10 / auto / 11; */
-    color: blue;
     text-align: right;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
