@@ -522,6 +522,10 @@ input[type='radio'] {
 .card_xl {
     display: grid;
     grid-area: auto / 1 / auto / -1;
+    grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b";
+    align-items: start;
     margin: 0 1rem 2rem 1rem;
     padding: 0.5rem 2rem 1rem 1.5rem;
     background-color: #D5E2CD;
@@ -532,21 +536,24 @@ input[type='radio'] {
     grid-row-gap: 0px; */
 }
 .card_xl_title {
-    grid-area: auto / 1 / auto / 9;
+    grid-area: a;
+    grid-column: 1 / 8;
 }
 .card_xl_title h5 {
     display: inline;
 }
 .card_xl_price { 
-    grid-area: auto / 10 / auto / 11;
-    color: red;
+    grid-area: a;
+    align-self: end;
+    grid-column: 10 / 11;
+    /* grid-area: auto / 10 / auto / 11; */
+    color: blue;
     text-align: right;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
     font-weight: 800;
     text-align: right;
-    align-self: last baseline;
-    align-self: last baseline;
+    /* align-self: last baseline; */
     border: 1px solid pink;
   }
 .card_xl_description { 
