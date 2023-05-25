@@ -54,7 +54,7 @@ h2 {
     font-family: 'noirmedium';
     /* font-family: 'noirnoir_regular'; */
     font-size: 1.25rem;
-    /* letter-spacing: -1px; */
+    letter-spacing: -1px;
     /* font-weight: 800; */
     }
 h3 {
@@ -66,6 +66,11 @@ h4 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
+    }
+h5 {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
     }
 h6 {
     font-family: 'Noir Regular';
@@ -93,6 +98,19 @@ img {
 button {
     cursor: pointer;
 }
+.menu_item_header {
+    margin: 0 0 1rem 1rem;
+}
+.btn_md {
+    color: #fff;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1.25rem;
+    background-color: #F68A58;
+    padding: 0.25rem 2rem 0.25rem 2rem;
+    border-radius: 20px;
+    max-height: 2.5rem;
+    border: none;
+}
 .btn_lg {
     color: #000;
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -103,12 +121,6 @@ button {
     border-radius: 10px;
     max-height: 2.5rem;
     border: 0px solid #000000;
-}
-.btn_lg hr {
-    position: relative;
-    top: 4px;
-    left: -16px;
-    width: 140%;
 }
 .btn_xl {
     color: #ffffff;
@@ -133,16 +145,25 @@ button {
     max-width: 24rem;
     /* width: 26rem; */
 }
+.btn_lg hr {
+    position: relative;
+    top: 4px;
+    left: -16px;
+    width: 140%;
+}
 .tab_lg {
-    color: #000;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-family: 'noirnoir_regular';
+    font-size: 1.25rem;
+    font-weight: 100;
+    padding: 1rem 0 0 0;
+    /* font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 800; */
     background-color: transparent;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 10px;
     max-height: 2.5rem;
-    border: 0px solid #000000;
+    border: none;
 }
 .tab_lg hr {
     position: relative;
@@ -307,12 +328,6 @@ input[type='radio'] {
     object-fit: fill;
 }
 
-/* Subheader */
-
-/* #container_subheader_logo {
-    margin: -2rem 0 0 0;
-} */
-
 /* Section - Splash */
 
 .img_cover {
@@ -438,7 +453,24 @@ input[type='radio'] {
     color: #F68A58;
 }
 
-/* Menu - Tabbed Nav & Menu */
+/* Screen Menu */
+
+/* Subheader */
+
+#container_subheader_logo {
+    margin: 0 0 2rem 0;
+}
+#container_splash_logo_tgd_circle {
+    grid-column: 2 / 10;
+    margin: -2rem 0 0 0;
+    text-align: center;
+}
+#container_splash_logo_tgd_circle img {
+    display: inline-block;
+    max-width: 3rem;
+}
+
+/* Tabbed Nav */
 
 #container_tabbed_nav {
     text-align: center;
@@ -476,27 +508,32 @@ input[type='radio'] {
     display: grid;
     grid-column: 1 / -1;
     margin: 0 1rem 2rem 1rem;
-    padding: 0.5rem 2rem 1rem 1.5rem;
-    background-color: #ebebeb;
+    padding: 0 2rem 1rem 1.5rem;
+    background-color: #D5E2CD;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .card_xl_img {
     object-fit: cover;
     margin: 1rem 0 0 0;
     border-radius: 10px;
 }
-.card_xl > h4 > span {
+.card_xl > h5 {
+    display: inline;
+    margin: 0.5rem 0 0.5rem 0;
+    /* padding: 0; */
+}
+.card_xl > h5 > span {
     float: right;
 }
 .card_xl h4 {
     margin: 0.5rem 0 0 0;
 }
-.card_xl .font_body_narrow {
+.font_body_sm {
     font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0 4rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    /* margin: 0 4rem 0 0; */
     /* border: 1px solid red; */
 }
 .card_xl .font_body {
@@ -553,32 +590,32 @@ input[type='radio'] {
     margin: 1rem 0 2rem 0;
 }
 .select-wrapper:after {
-      content: '\0025BC';
-      font: normal normal normal 12px/1 FontAwesome;
-      color: white;
-      right: 20px;
-      top: 2px;
-      height: 26px;
-      padding: 15px 0px 0px 8px;
-      position: absolute;
-      pointer-events: none;
+    content: '\f078';
+    font: normal normal normal 12px/1 FontAwesome;
+    color: #fff;
+    right: 20px;
+    top: 2px;
+    height: 26px;
+    padding: 15px 0px 0px 8px;
+    position: absolute;
+    pointer-events: none;
 }
 .select-wrapper select > p, select, option {
-        font-family: 'Zen Kaku Gothic New', sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
-        /* padding: 1rem 0 0 0; */
-      /* font-family: 'Times New Roman', Times, serif;
-      font-size: x-large;
-      text-align: center; */
-      color: #FFF;
-      /* margin: 0; */
-      padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    /* padding: 1rem 0 0 0; */
+    /* font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center; */
+    color: #FFF;
+    /* margin: 0; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
   .select_wrapper select input, select, option {
-      background-color: #333;
-      border-radius: 1vh;
-      border-color: transparent;
+    background-color: #333;
+    border-radius: 1vh;
+    border-color: transparent;
 }
   .select-wrapper select {
     min-width: 250px;
