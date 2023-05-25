@@ -553,7 +553,7 @@ input[type='radio'] {
     font-weight: 800;
     text-align: right;
     /* align-self: last baseline; */
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
   }
 .card_xl_description { 
     grid-area: auto / 1 / auto / 11;
