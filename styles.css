@@ -98,9 +98,6 @@ img {
 button {
     cursor: pointer;
 }
-.menu_item_header {
-    margin: 0 0 1rem 1rem;
-}
 .btn_md {
     color: #fff;
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -495,7 +492,7 @@ input[type='radio'] {
 #container_menu {
     display: inline;
     text-align: left;
-    padding: 1rem 0 0 0;
+    padding: 0.5rem 0 0 0;
     /* border: 1px solid green; */
 }
 #container_menu_item {
@@ -504,9 +501,15 @@ input[type='radio'] {
     padding: 0 0 0 0;
     /* border: 1px solid green; */
 }
-#container_menu h3 {
+.menu_item_header {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0 0 1rem 1rem;
+}
+.menu_item_notes {
     margin: 0 0 1rem 0;
-    padding: 0 0 0 1rem;
+    padding: 0 0 0.5rem 1rem;
 }
 #container_menu button {
     margin: 0 1rem 0 0;
@@ -527,7 +530,7 @@ input[type='radio'] {
 }
 .card_xl > h5 {
     display: inline;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.5rem 0 0 0;
     /* padding: 0; */
 }
 .card_xl > h5 > span {
@@ -540,8 +543,7 @@ input[type='radio'] {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 0.8rem;
     line-height: 1.25;
-    /* margin: 0 4rem 0 0; */
-    /* border: 1px solid red; */
+    margin: 0.5rem 0 0 0;
 }
 .card_xl .font_body {
     margin: 0 0 0 0;
