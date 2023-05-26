@@ -28,6 +28,7 @@
 
 select, option, button, a {
     -webkit-appearance: none;
+    appearance:unset;
     }
 html {
     scroll-behavior: smooth;
