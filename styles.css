@@ -259,7 +259,7 @@ input[type='radio'] {
 }
 .btn_avatar > img {
     object-fit:contain;
-    max-height: 2.75rem;
+    max-height: 2.25rem;
     /* border: 1px solid green; */
   }
 .btn_back {
@@ -270,7 +270,7 @@ input[type='radio'] {
 }
 .btn_back > img {
     object-fit:contain;
-    max-height: 2.75rem;
+    max-height: 2.25rem;
     /* border: 1px solid green; */
   }
 .header_screen_title_btn_back h6 {
