@@ -682,3 +682,16 @@ input[type='radio'] {
     border: none;
     background: transparent;
 }
+.btn_myorder_qty:after {
+    content: url('images/icon_nav_myorder_qty_active.svg');
+    top: -2.75rem;
+    left: -3.2rem;
+    /* content: '\f078';
+    font: normal normal normal 16px/1 FontAwesome;
+    color: #000; */
+    /* right: 20px; */
+    /* height: 26px; */
+    /* padding: 15px 0px 0px 8px; */
+    position: relative;
+    pointer-events: none;
+}
