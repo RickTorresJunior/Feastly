@@ -792,7 +792,7 @@ input[type='radio'] {
 .container_myorder_subtotal {
     display: grid;
     grid-area: auto / 1 / auto / 11;
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 2rem 0 2rem;
     /* grid-template-columns: repeat(8, 1fr); */
     gap: 10px;
     grid-template-areas:
@@ -810,11 +810,13 @@ input[type='radio'] {
 }
 .myorder_subtotal_title {
     grid-area: a;
+    margin: 0 0 1rem 0;
 }
 .myorder_subtotal_price {
     grid-area: b;
     text-align: right;
     align-self: end;
+    margin: 0 0 1rem 0;
 }
 .myorder_subtotal_addons {
     grid-area: c;
