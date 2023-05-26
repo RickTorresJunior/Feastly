@@ -28,7 +28,7 @@
 
 select, option, button, a {
     -webkit-appearance: none;
-    appearance:unset;
+    appearance: unset;
     }
 html {
     scroll-behavior: smooth;
@@ -547,6 +547,7 @@ input[type='radio'] {
     grid-area: a;
     align-self: end;
     grid-column: 10 / 11;
+    color: orange;
     /* grid-area: auto / 10 / auto / 11; */
     text-align: right;
     font-family: 'Zen Kaku Gothic New', sans-serif;
