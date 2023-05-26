@@ -340,7 +340,7 @@ input[type='radio'] {
     max-height: 100%;
 }
 #container_splash {
-    padding: 0 0 2rem 0;
+    padding: 0 0 0.5rem 0;
     /* background-color: #ccc; */
 }
 #container_splash img {
