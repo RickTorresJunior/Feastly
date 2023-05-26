@@ -134,7 +134,7 @@ button {
     color: #ffffff;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 500;
     background-color: #F68A58;
     padding: 1rem 3rem 1rem 3rem;
     border-radius: 10px;
@@ -214,7 +214,7 @@ input[type='radio'] {
     position: sticky;
     display: grid;
     grid-column: 1 / -1;
-    padding: 2rem 0 2rem 0;
+    padding: 1.5rem 0 1.5rem 0;
     margin: 0 0 0 0;
     max-height: 4vh;
     background-color: #fff;
@@ -503,8 +503,10 @@ input[type='radio'] {
 #container_menu_item {
     display: inline;
     text-align: left;
-    padding: 0 0 0 0;
-    /* border: 1px solid green; */
+    margin: 0 2rem 1rem 2rem;
+}
+#container_menu_item h4 {
+    display: inline;
 }
 .menu_item_header {
     overflow-x: auto;
@@ -563,26 +565,11 @@ input[type='radio'] {
     line-height: 1.25;
     margin: 0.5rem 0 0 0;
 }
-/* .card_xl {
-    display: grid;
-    grid-column: 1 / -1;
-    margin: 0 1rem 2rem 1rem;
-    padding: 0 2rem 1rem 1.5rem;
-    background-color: #D5E2CD;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-} */
 .card_xl_img {
     object-fit: cover;
     margin: 1rem 0 0 0;
     border-radius: 10px;
 }
-/* .card_xl > h5 {
-    display: grid;
-    grid-column: 1 / -1;
-    line-height: 1.25;
-    margin: 0.5rem 0 0 0;
-} */
 .card_xl > .menu_price {
     display: grid;
     grid-column: 10 / 11;
@@ -610,28 +597,6 @@ input[type='radio'] {
 .container_ingredients {
     margin: 0 0 1rem 0;
 }
-.btn_icon_close {
-    position: relative;
-    top: 4px;
-    /* display: inline-block; */
-    padding: 0 4px 0 0;
-    max-width: 1.2rem;
-}
-.btn_ingredient {
-    font-size: 1rem;
-    background-color: #ffffff;
-    margin: 0 1vw 3vw 0;
-    border: 1px solid #a5a5a5;
-    border-radius: 6px;
-}
-.btn_label {
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    position: relative;
-    display: inline-block;
-}
 .form_default select {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
@@ -658,10 +623,9 @@ input[type='radio'] {
 }
 .select-wrapper:after {
     content: '\f078';
-    font: normal normal normal 12px/1 FontAwesome;
-    color: #fff;
+    font: normal normal normal 16px/1 FontAwesome;
+    color: #000;
     right: 20px;
-    top: 2px;
     height: 26px;
     padding: 15px 0px 0px 8px;
     position: absolute;
@@ -675,14 +639,15 @@ input[type='radio'] {
     /* font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
     text-align: center; */
-    color: #FFF;
+    color: #000;
     /* margin: 0; */
     padding: 0.5rem 1rem 0.5rem 1rem;
 }
   .select_wrapper select input, select, option {
-    background-color: #333;
-    border-radius: 1vh;
-    border-color: transparent;
+    background-color: #fff;
+    /* border-radius: 1vh; */
+    border-radius: 20px;
+    border: 2px solid #000;
 }
   .select-wrapper select {
     min-width: 250px;
@@ -695,10 +660,12 @@ input[type='radio'] {
     padding: 0 0 2rem 0;
 }
 .qty {
+    font-size: 1.25rem;
     width: 40px;
     height: 25px;
     text-align: center;
-    /* background-color: red; */
+    /* background-color: #F68A58; */
+    border: none;
 }
 .qtyminus {
     width: 3rem;
