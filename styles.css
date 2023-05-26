@@ -646,7 +646,7 @@ input[type='radio'] {
     background-color: #fff;
     /* border-radius: 1vh; */
     border-radius: 20px;
-    border: 2px solid #000;
+    border: 2px solid #838383;
 }
   .select-wrapper select {
     min-width: 250px;
