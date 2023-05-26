@@ -343,11 +343,11 @@ input[type='radio'] {
     padding: 0 0 0.5rem 0;
     /* background-color: #ccc; */
 }
-#container_splash img {
-    /* width: 100%;
-    background-color: #ffffff; */
-    /* border: 1px solid red; */
-}
+/* #container_splash img {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid red;
+} */
 
 /* Screen - QR Scan */
 
@@ -466,7 +466,7 @@ input[type='radio'] {
 /* Subheader */
 
 #container_subheader_logo {
-    margin: 0 0 2rem 0;
+    margin: 0 0 0.5rem 0;
 }
 #container_splash_logo_tgd_circle {
     grid-column: 2 / 10;
