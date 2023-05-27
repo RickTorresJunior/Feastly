@@ -73,11 +73,6 @@ h5 {
     font-size: 1rem;
     font-weight: 800;
     }
-/* h6 {
-    font-family: 'Noir Regular';
-    text-transform: uppercase;
-    font-size: 2rem;
-    } */
 h6 {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1.5rem;
@@ -115,7 +110,7 @@ button {
     border: none;
 }
 .btn_lg {
-    color: #000;
+    color: #fff;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -936,6 +931,7 @@ input[type='radio'] {
 
 #container_payment_method {
     padding: 0 2rem 0 2rem;
+    margin: -8rem 0 0 0;
     border-radius: 40px 40px 0 0;
     /* background-color: red; */
     /* filter: drop-shadow(0 0 1rem #d7d7d7); */
@@ -965,4 +961,10 @@ input[type='radio'] {
 }
 .card_payment_xl p {
     grid-area: c;
+}
+#container_payment_method .btn_lg {
+    margin: 0 0 2rem 0;
+}
+#container_payment_method .btn_xxl {
+    margin: 0 0 8rem 0;
 }
