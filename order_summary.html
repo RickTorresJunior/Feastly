@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Grey Dog - Order Summary</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+      <body>
+      <div class="parent">
+
+        <div id="container_header_default" class="container_header">
+            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Bell to call sever"/></div>
+            <div class="header_screen_title"><img src="images/btn_feastly_logo.png"></div>
+            <div class="btn_avatar"><img src="images/btn_avatar_server.png" alt="Button - alert server"/></div>
+        </div>
+
+        <div id="container_subheader_logo_left" class="col_10">
+            <h1>Order Summary</h1>
+            <div id="container_logo_tgd_circle_left">
+                <img src="images/img_logo_thegreydog_circle.png" alt="The Grey Dog logo and typeface"/><h2>The Grey Dog</h2><h4>Table #12</h4>
+            </div>
+        </div>
+
+        <div class="container_myorder_receipt">
+            <div class="myorder_title"><h4>Order:</h4></div>
+            <div class="myorder_item">
+                <h5>Grey Dog's Breakfast</h5>
+            </div>
+            <div class="myorder_price">
+                <p class="font_body">$18.50</p>
+            </div>
+            <div class="myorder_list">
+                <p class="font_body">scrambled eggs<br>french toast<br>sausage</p>
+            </div>
+            <div class="myorder_btn">
+                <button><img src="images/btn_myorder.svg"></button>
+            </div>
+          </div>
+          
+        <div class="col_10">
+            <br>
+            <button class="btn_md">Add more items</button>
+            <hr class="divider_horizontal">
+        </div>
+
+        <div class="container_tip">
+            <div class="tip_title">
+                <h4>Leave a Tip</h4>
+            </div>
+            <div class="tip_buttons">
+                <button class="btn_sm">
+                    <p>10%<br>$1.85</p>
+                </button>
+                <button class="btn_sm">
+                    <p>15%<br>$2.75</p>
+                </button>
+                <button class="btn_sm">
+                    <p>20%<br>$3.50</p>
+                </button>
+                <button class="btn_sm">
+                    <p>30%<br>$5.55</p>
+                </button>
+            </div>
+            <div class="tip_subtotal_title">
+                <p class="font_body">Subtotal</p>
+            </div>
+            <div class="tip_subtotal">
+                <p class="font_body">$18.50</p>
+            </div>
+            <div class="tip_subtotal_taxes_title">
+                <p class="font_body">Taxes</p>
+            </div>
+            <div class="tip_subtotal_taxes">
+                <p class="font_body">$3.32</p>
+            </div>
+        </div>
+
+        <div class="col_10">
+            <hr class="divider_horizontal">
+        </div>
+
+        <div class="container_total">
+            <div class="tip_amount_title">
+                <p class="font_body">Tip</p>
+            </div>
+            <div class="tip_amount">
+                <p class="font_body">$3.50</p>
+            </div>
+            <div class="total_title">
+                <h6>Total</h6>
+            </div>
+            <div class="total_amount">
+                <h6>$25.32</h6>
+            </div>
+        </div>
+
+        <div id="container_payment_method" class="col_10_left">
+            <h4>Payment Method</h4>
+            <div class="card_payment_xl"><img src="images/img_payment_method_visa.svg"><p class="font_body">Ending in 1234</p></div>
+            <div class="card_payment_xl"><img src="images/img_payment_method_visa.svg"><p class="font_body">Apple Pay</p></div>
+        </div>
+
+        <!-- Footer Nav -->
+
+    <div class="footer">
+        <button onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation button - Home"><span>Home</span></button><button class="footer_nav_selected" onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation button - QR Scan"><span>QR Scan</span></button><button class="btn_myorder_qty"><img src="images/icon_nav_myorder_active.svg" alt="Navigation button - My order"><span class="footer_nav_selected">My Order</span></button><button><img src="images/icon_nav_profile_default.svg" alt="Navigation button - User Profile">Profile</button>
+    </div>
+</div> <!-- End of Parent -->
+</body>
+</html>
