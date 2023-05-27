@@ -956,7 +956,9 @@ input[type='radio'] {
 .card_payment_xl img {
     grid-area: a;
     width: 4rem;
-    filter: drop-shadow(0 0 1rem #d7d7d7);
+    box-shadow: 2px 2px 8px #d7d7d7;
+    /* filter: drop-shadow(0 0 1rem #d7d7d7); */
+    /* filter: drop-shadow(0 0 1rem #d7d7d7); */
 }
 .card_payment_xl p {
     /* text-align: right; */
