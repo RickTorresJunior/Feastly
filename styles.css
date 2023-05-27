@@ -857,6 +857,9 @@ input[type='radio'] {
     border: 1px solid #ccc;
     border-radius: 10px;
 }
+.btn_sm a:visited, .btn_sm a:active {
+    color: #000;
+}
 .tip_buttons {
     grid-area: c;
     grid-column: 1 / 11;
