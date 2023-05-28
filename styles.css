@@ -759,7 +759,8 @@ input[type='radio'] {
 }
 .myorder_title h4 {
     margin: 0;
-    padding: 0
+    padding: 0;
+    text-align: left;
 }
 .myorder_item {
     grid-area: c;
@@ -998,7 +999,8 @@ input[type='radio'] {
 #container_confirmation > h4 {
     margin: 0 0 1rem 0;
     padding: 0 0 0 2rem;
-  
+    text-align: left;
+
 }
 
 .container_confirmation_item {
@@ -1027,36 +1029,39 @@ input[type='radio'] {
 /* Logo and Table # */
 
 #container_subheader_logo {
-    margin: 0 2rem 2rem 2rem;
+    margin: 1rem 2rem 0 2rem;
 }
-#container_subheader_logo h1 {
+#container_subheader_logo h1, h4 {
     text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 0;
 }
 #container_logo_tgd_circle {
     display: grid;
-    grid-area: auto / 1 / auto / 11;
-    grid-row: 1;
+    grid-area: auto / 2 / auto / 10;
     /* gap: 10px; */
     grid-template-areas:
       "a a a a a b b b";
     align-items: center;
     /* align-items: start; */
     text-align: left;
+    white-space: nowrap;
+    margin: 0 0 2rem 0;
 }
 #container_logo_tgd_circle img {
     grid-area: a;
     max-width: 3rem;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0 0 0;
 }
 #container_logo_tgd_circle h2 {
     grid-area: a;
     padding: 0 0 0 0;
-    margin: 0.7rem 0 0 4rem;
+    margin: 1.5rem 0 0 4rem;
 }
 #container_logo_tgd_circle h4 {
     grid-area: b;
     text-align: right;
     padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    margin: 0.8rem 0 0 0;
 }
