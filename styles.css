@@ -381,7 +381,7 @@ input[type='radio'] {
 
 #container_body_header {
     grid-column: 1 / 9;
-    margin: 0 0 0 1rem;
+    margin: 0 0 1rem 1rem;
     text-align: left;
 }
 #container_body_header h1 {
@@ -465,9 +465,13 @@ input[type='radio'] {
 
 /* Subheader */
 
+#container_subheader_splash {
+    margin: 0 0 2rem 0;
+}
+/* 
 #container_subheader_logo {
     margin: 0 0 0.5rem 0;
-}
+} */
 #container_splash_logo_tgd_circle {
     grid-column: 2 / 10;
     margin: -2rem 0 0 0;
@@ -521,7 +525,7 @@ input[type='radio'] {
     margin: 0 1rem 0 0;
 }
 
-/* Menu Item Example */
+/* Menu Item */
 
 .card_xl {
     display: grid;
