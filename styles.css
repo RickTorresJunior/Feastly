@@ -286,16 +286,14 @@ input[type='radio'] {
     display: grid;
     grid-column: 1 / 11;
     padding: 0 0 0.5rem 0;
-    margin: 0 0.5rem 1rem 0.5rem;
-    max-width: 98vw;
+    margin: 0 1rem 1rem 1rem;
+    /* max-width: 86vw; */
 }
 .container_searchbar:after {
-    content: url('images/btn_search_black.svg');
-    /* font: normal normal normal 16px/1 FontAwesome; */
-    color: #000;
+    content: url('images/btn_search_thick.svg');
     /* left: 23rem; */
     /* height: 26px; */
-    padding: 20px 0px 0px 84vw;
+    padding: 16px 0px 0px 84vw;
     position: absolute;
     pointer-events: none;
 }
@@ -315,7 +313,7 @@ input[type='radio'] {
     font-weight: 600;
     height: 2rem;
     /* width: 86vw; */
-    margin: 0 1rem 0 1rem;
+    margin: 0 0 0 0;
     padding: 0.5rem 0 0.5rem 1rem;
     border: 2px solid #F68A58;
     border-radius: 10px;
