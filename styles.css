@@ -546,6 +546,9 @@ input[type='radio'] {
 .card_xl_title h5 {
     display: inline;
 }
+.card_xl .font_body {
+    margin: 0 0 0 0;
+}
 .card_xl_price { 
     grid-area: a;
     align-self: end;
@@ -584,14 +587,20 @@ input[type='radio'] {
 .card_xl h4 {
     margin: 0.5rem 0 0 0;
 }
+.card_xxl {
+    margin: 0 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    border: 2px solid #838383;
+    border-radius: 10px;
+}
+.card_xxl h2 {
+    color: #F68A58;
+}
 .font_body_sm {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 0.8rem;
     line-height: 1.25;
     margin: 0.5rem 0 0 0;
-}
-.card_xl .font_body {
-    margin: 0 0 0 0;
 }
 .container_ingredients {
     margin: 0 0 1rem 0;
@@ -972,4 +981,35 @@ input[type='radio'] {
 }
 #container_payment_method .btn_xxl {
     margin: 0 0 8rem 0;
+}
+
+/* Confirmation */
+
+#container_confirmation > h4 {
+    margin: 0 0 1rem 0;
+    padding: 0 0 0 2rem;
+  
+}
+
+.container_confirmation_item {
+    display: grid;
+    grid-area: auto / 1 / auto / 11;
+    margin: 0 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    /* grid-template-columns: repeat(8, 1fr); */
+    /* gap: 10px; */
+    grid-template-areas:
+      "a a a a b b b b"
+      "a a a a b b b b"
+      "c c c c d d d d"
+      "c c c c d d d d"
+      "e e e e f f f f"
+      "e e e e f f f f";
+    align-items: start;
+    border: 2px solid #F68A58;
+    border-radius: 40px;
+}
+.container_confirmation_item > p {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
