@@ -863,11 +863,17 @@ input[type='radio'] {
     line-height: 1.5;
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
     margin: 0 0.5rem 0 0.5rem;
-    max-width: 15vw;
+    max-width: 18vw;
     background-color: #D5E2CD;
     border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
+}
+.btn_sm_selected {
+    color: #fff;
+    font-weight: 400;
+    background-color: #F68A58;
+    border: 1px solid #F68A58;
 }
 .btn_sm a:visited, .btn_sm a:active {
     color: #000;
