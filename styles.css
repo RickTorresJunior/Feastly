@@ -286,6 +286,7 @@ input[type='radio'] {
     display: grid;
     grid-column: 1 / 11;
     padding: 0 0 0.5rem 0;
+    margin: 0 0.5rem 1rem 0.5rem;
 }
 .container_searchbar img {
     position: relative;
@@ -364,11 +365,11 @@ input[type='radio'] {
     max-width: 3rem;
     margin: 0 1rem 0 0;
 }
-#container_logo_tgd_circle span {
+/* #container_logo_tgd_circle span {
     display: inline-block;
     position: relative;
     top: -1rem;
-}
+} */
 #container_table_number h4 {
     margin: 1rem 0 1rem 0;
 }
@@ -1032,10 +1033,10 @@ input[type='radio'] {
 
 /* Logo and Table # */
 
-#container_subheader_logo {
+#container_subheader_title {
     margin: 1rem 2rem 0 2rem;
 }
-#container_subheader_logo h1, h4 {
+#container_subheader_title h1, h4 {
     text-align: center;
     margin: 0 0 1rem 0;
     padding: 0 0 0 0;
