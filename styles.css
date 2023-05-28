@@ -284,16 +284,16 @@ input[type='radio'] {
 
 .container_searchbar {
     display: grid;
-    grid-column: 1 / 11;
+    /* grid-column: 1 / 11; */
     padding: 0 0 0.5rem 0;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 2rem 1rem 2rem;
     /* max-width: 86vw; */
 }
 .container_searchbar:after {
     content: url('images/btn_search_thick.svg');
     /* left: 23rem; */
     /* height: 26px; */
-    padding: 16px 0px 0px 84vw;
+    padding: 16px 0px 0px 76vw;
     position: absolute;
     pointer-events: none;
 }
