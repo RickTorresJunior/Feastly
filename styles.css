@@ -862,6 +862,7 @@ input[type='radio'] {
     line-height: 1.5;
     padding: 0.25rem 1rem 0.25rem 1rem;
     margin: 0 0.5rem 0 0.5rem;
+    max-width: 15vw;
     background-color: #D5E2CD;
     border: 1px solid #ccc;
     border-radius: 10px;
