@@ -1025,6 +1025,8 @@ input[type='radio'] {
 #container_logo_tgd_circle {
     display: grid;
     grid-area: auto / 1 / auto / 11;
+    grid-row: 1;
+    /* gap: 10px; */
     grid-template-areas:
       "a a a a a b b b";
     align-items: center;
