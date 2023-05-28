@@ -293,7 +293,7 @@ input[type='radio'] {
     content: url('images/btn_search_thick.svg');
     /* left: 23rem; */
     /* height: 26px; */
-    padding: 16px 0px 0px 76vw;
+    padding: 16px 0px 0px 82vw;
     position: absolute;
     pointer-events: none;
 }
