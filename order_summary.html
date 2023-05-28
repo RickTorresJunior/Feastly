@@ -62,16 +62,16 @@
                 <h4>Leave a Tip</h4>
             </div>
             <div class="tip_buttons">
-                <button class="btn_sm">
+                <button class="btn_sm" onclick="myFunction.call(this)">
                     <p>10%<br>$1.85</p>
                 </button>
-                <button class="btn_sm">
+                <button class="btn_sm" onclick="myFunction.call(this)">
                     <p>15%<br>$2.75</p>
                 </button>
-                <button class="btn_sm btn_sm_selected">
+                <button class="btn_sm" onclick="myFunction.call(this)">
                     <p>20%<br>$3.50</p>
                 </button>
-                <button class="btn_sm">
+                <button class="btn_sm" onclick="myFunction.call(this)">
                     <p>30%<br>$5.55</p>
                 </button>
             </div>
@@ -121,12 +121,13 @@
 
 <div id="container_payment_method" class="col_10_left">
     <h4>Payment Method</h4>
-    <div class="card_payment_xl"><img src="images/img_payment_method_visa.svg"><p class="font_body">Ending in 1234</p></div>
+    <div class="card_payment_xl card_payment_selected"><img src="images/img_payment_method_visa.svg"><p class="font_body">Ending in 1234</p></div>
     <div class="card_payment_xl"><img src="images/img_payment_method_applepay.png"><p class="font_body">Apple Pay</p></div>
     <div class="card_payment_xl"><img src="images/img_payment_method_cash.svg"><p class="font_body">Cash</p></div>
-    <button class="btn_lg">+ Add payment method</button>
+    <button class="btn_lg btn_secondary">+ Add payment method</button>
     <br>
     <button class="btn_xxl" onclick="location.href='confirmation.html';">Place Order - Total $25.32</button>
+    <button class="btn_xxl btn_cancel" onclick="location.href='home.html';">Cancel</button>
 </div> <!-- End of Payment Method -->
 </body>
 </html>
