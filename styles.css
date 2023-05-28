@@ -1013,3 +1013,38 @@ input[type='radio'] {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
+
+/* Logo and Table # */
+
+#container_subheader_logo {
+    margin: 0 2rem 2rem 2rem;
+}
+#container_subheader_logo h1 {
+    text-align: center;
+}
+#container_logo_tgd_circle {
+    display: grid;
+    grid-area: auto / 1 / auto / 11;
+    grid-template-areas:
+      "a a a a a b b b";
+    align-items: center;
+    /* align-items: start; */
+    text-align: left;
+}
+#container_logo_tgd_circle img {
+    grid-area: a;
+    max-width: 3rem;
+    padding: 0;
+    margin: 0;
+}
+#container_logo_tgd_circle h2 {
+    grid-area: a;
+    padding: 0 0 0 0;
+    margin: 0.7rem 0 0 4rem;
+}
+#container_logo_tgd_circle h4 {
+    grid-area: b;
+    text-align: right;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
