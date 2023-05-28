@@ -289,6 +289,16 @@ input[type='radio'] {
     margin: 0 0.5rem 1rem 0.5rem;
     max-width: 98vw;
 }
+.container_searchbar:after {
+    content: url('images/btn_search_black.svg');
+    /* font: normal normal normal 16px/1 FontAwesome; */
+    color: #000;
+    /* left: 23rem; */
+    /* height: 26px; */
+    padding: 20px 0px 0px 84vw;
+    position: absolute;
+    pointer-events: none;
+}
 .container_searchbar img {
     position: relative;
     top: -2.25rem;
