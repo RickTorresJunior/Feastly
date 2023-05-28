@@ -27,3 +27,7 @@ function openCategory(item_category) {
         } 
     });
 });
+
+function myFunction () {
+    $(this).toggleClass('btn_sm_selected');
+  };
