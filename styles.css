@@ -141,6 +141,15 @@ button {
     border: 0px solid #000000;
     width: 80vw;
     max-width: 24rem;
+    margin: 0 0 1rem 0;
+}
+.btn_secondary {
+    color: #000;
+    font-weight: 400;
+    background-color: #D5E2CD;
+}
+.btn_cancel {
+    background-color: #C3C3C3;
 }
 .btn_lg hr {
     position: relative;
@@ -296,12 +305,6 @@ input[type='radio'] {
     padding: 16px 0px 0px 82vw;
     position: absolute;
     pointer-events: none;
-}
-.container_searchbar img {
-    position: relative;
-    top: -2.25rem;
-    margin: 0 0 0 86vw;
-    max-width: 1.25rem;
 }
 #container_searchfield {
     grid-column: 4 / 8;
@@ -890,6 +893,9 @@ input[type='radio'] {
     background-color: #F68A58;
     border: 1px solid #F68A58;
 }
+.buttonClassB {
+    background: red;
+}
 .btn_sm a:visited, .btn_sm a:active {
     color: #000;
 }
@@ -967,7 +973,7 @@ input[type='radio'] {
 /* Payment Method Card */
 
 #container_payment_method {
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 2rem 0 2rem;
     margin: -8rem 0 0 0;
     border-radius: 40px 40px 0 0;
     /* background-color: red; */
@@ -977,6 +983,7 @@ input[type='radio'] {
     box-shadow: 0px 0px 15px 0px rgb(212, 212, 212);
 }
 #container_payment_method h4 {
+    text-align: left;
     padding: 0 0 0 1rem;
 }
 .card_payment_xl {
@@ -987,7 +994,8 @@ input[type='radio'] {
     "a b b b b b b b";
     padding: 1rem 1rem 1rem 1rem;
     margin: 0 0 1rem 0;
-    border: 2px solid #F68A58;
+    /* border: 2px solid #F68A58; */
+    border: 2px solid #ccc;
     border-radius: 10px;
 }
 .card_payment_xl img {
@@ -1001,10 +1009,15 @@ input[type='radio'] {
     /* text-align: right; */
     grid-area: b;
 }
+.card_payment_selected, .card_payment_selected p {
+    color: #fff;
+    font-weight: 500;
+    background-color: #F68A58;
+}
 #container_payment_method .btn_lg {
     margin: 0 0 2rem 0;
 }
-#container_payment_method .btn_xxl {
+#container_payment_method .btn_cancel {
     margin: 0 0 8rem 0;
 }
 
@@ -1016,7 +1029,6 @@ input[type='radio'] {
     text-align: left;
 
 }
-
 .container_confirmation_item {
     display: grid;
     grid-area: auto / 1 / auto / 11;
