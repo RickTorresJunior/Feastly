@@ -262,6 +262,9 @@ input[type='radio'] {
     scroll-behavior: smooth;
     padding: 0 0 8rem 0;
     }
+.vh_full {
+    height: 87vh;
+}
 
 /* Adds Gradient Background */
 
@@ -288,12 +291,27 @@ input[type='radio'] {
     grid-column: 2 / 10;
     }
 
+/* Splash */
+#container_splash_video {
+    margin: 12rem 0 0 0;
+    padding: 0 2rem 0 0;
+}
+video {
+    justify-self: center;
+    width: 100%;
+    height: auto;
+}
+.bg_avocado {
+    background-size: cover;
+    background-color: #D5E2CD;
+    }
+
 /* Log In */
 
 .img_login_logo {
     max-width: 90vw;
     margin: 6rem 0 0 0;
-}
+    }
 .container_login {
     display: grid;
     padding: 0 0 0 0;
@@ -304,7 +322,7 @@ input[type='radio'] {
 .container_login_buttons {
     margin: 1rem 0 2rem 0;
     white-space: nowrap;
-}
+    }
 .container_login > h5 {
     margin: 0 0 2rem 0;
     padding: 0 0 0 0;
