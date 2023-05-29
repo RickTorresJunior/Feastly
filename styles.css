@@ -296,8 +296,8 @@ input[type='radio'] {
 }
 .container_login {
     display: grid;
-    /* grid-column: 2 / 10; */
     padding: 0 0 0 0;
+    margin: 0 2.5rem 0 2rem;
     /* margin: 0 2.5rem 0 2rem; */
     /* max-width: 86vw; */
     }
@@ -334,7 +334,7 @@ input[type='radio'] {
 .font_link {
     font-weight: bold;
     /* color: #C688B4; */
-    color: red;
+    color: green;
 }
     
 /* Section - Header */
