@@ -43,6 +43,12 @@ body {
 .inline {
     display: inline;
     }
+.hide {
+    visibility: hidden;
+}
+.show {
+    visibility: visible;
+}
 a, a:visited {
     color: inherit;
     text-decoration: none;
@@ -52,11 +58,9 @@ h1 {
     font-size: 1.8rem;
     font-weight: 100;
     padding: 1rem 0 0 0;
-    /* text-align: center; */
     }
 h2 {
     font-family: 'noirmedium';
-    /* font-family: 'noirnoir_regular'; */
     font-size: 1.25rem;
     letter-spacing: -1px;
     /* font-weight: 800; */
@@ -97,7 +101,6 @@ img {
     object-fit: cover;
     width: 100%;
     max-height: 30vh;
-    /* max-width:fit-content; */
 }
 button {
     cursor: pointer;
@@ -175,6 +178,13 @@ button {
     max-height: 2.5rem;
     border: none;
     }
+.tab_lg_selected::after {
+    content: "";
+    display: block;
+    width: 6rem;
+    padding-top: 0.25rem;
+    border-bottom: 4px solid #ccc;
+  }
 .tab_lg a {
     color: #000;
     }
@@ -230,23 +240,6 @@ input[type='radio'] {
     max-height: 4vh;
     background-color: #fff;
     }
-#container_header_default .btn_avatar {
-    visibility: visible;
-    }
-#container_header_no_btn_back .btn_back {
-    visibility: hidden;
-    }
-#container_header_btn_avatar .btn_avatar {
-    visibility: visible;
-    }
-#container_header_btn_avatar .btn_back {
-    visibility: hidden;
-    }
-#container_header_logo .btn_back, .btn_avatar {
-    visibility: hidden;
-    /* opacity: 0; */
-    /* transform: scale(0); */
-    }
 .btn_header_back {
     grid-area: 1 / 2 / 2 / 3;
     align-self: center;
@@ -256,34 +249,22 @@ input[type='radio'] {
     grid-area: 1 / 4 / 2 / 8;
     text-align: center;
     }
-.header_screen_title h6 {
-    color: #ffffff;
-    margin: 10px 0 0 0;
-    }
 .header_screen_title img {
-    /* object-fit: contain; */
     max-width: 10rem;
     }
 .btn_avatar {
     grid-area: 1 / 8 / 2 / 11;
-    /* align-self: center; */
-    /* max-width: 3rem; */
     }
 .btn_avatar > img {
     object-fit:contain;
     max-height: 2.25rem;
-    /* border: 1px solid green; */
     }
 .btn_back {
     grid-area: 1 / 2 / 2 / 3;
-    /* object-fit:cover; */
-    /* text-align: center; */
-    /* border: 1px solid orange; */
     }
 .btn_back > img {
     object-fit:contain;
     max-height: 2.25rem;
-    /* border: 1px solid green; */
     }
 .header_screen_title_btn_back h6 {
     color: #ffffff;
@@ -357,13 +338,7 @@ input[type='radio'] {
 #container_splash {
     width: 100vw;
     padding: 0 0 0.5rem 0;
-    /* background-color: #ccc; */
     }
-/* #container_splash img {
-    width: 100%;
-    background-color: #ffffff;
-    border: 1px solid red;
-} */
 
 /* Screen - QR Scan */
 
@@ -945,6 +920,7 @@ input[type='radio'] {
     /* border: 2px solid #F68A58; */
     border: 2px solid #ccc;
     border-radius: 10px;
+    cursor: pointer;
     }
 .card_payment_xl img {
     grid-area: a;
