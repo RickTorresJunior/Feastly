@@ -28,6 +28,10 @@ function openCategory(item_category) {
     });
 });
 
-function myFunction () {
+function selectTip () {
     $(this).toggleClass('btn_sm_selected');
+  };
+
+  function selectPaymentMethod () {
+    $(this).toggleClass('card_payment_selected');
   };
