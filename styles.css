@@ -10,7 +10,6 @@
         font-weight: normal;
         font-style: normal;
     } */
-
 @font-face {
         font-family: 'noirnoir_regular';
         src: url('fonts/noir_regular-webfont.woff2') format('woff2'),
@@ -29,6 +28,10 @@
 select, option, button, a {
     -webkit-appearance: none;
     appearance: unset;
+    }
+html, body {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     }
 html {
     scroll-behavior: smooth;
