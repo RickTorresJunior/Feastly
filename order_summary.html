@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>The Grey Dog - Order Summary</title>
+        <title>Order Summary</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
       <body>
       <div class="parent">
 
-        <div id="container_header_default" class="container_header">
+        <div class="container_header">
             <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Bell to call sever"/></div>
             <div class="header_screen_title"><img src="images/btn_feastly_logo.png"></div>
             <div class="btn_avatar"><img src="images/btn_avatar_server.png" alt="Button - alert server"/></div>
@@ -53,7 +54,7 @@
           
         <div class="col_10">
             <br>
-            <button class="btn_md">Add more items</button>
+            <button class="btn_md" onclick="location.href='menu.html';">Add more items</button>
             <hr class="divider_horizontal">
         </div>
 
@@ -62,16 +63,16 @@
                 <h4>Leave a Tip</h4>
             </div>
             <div class="tip_buttons">
-                <button class="btn_sm" onclick="myFunction.call(this)">
+                <button class="btn_sm" onclick="selectTip.call(this)">
                     <p>10%<br>$1.85</p>
                 </button>
-                <button class="btn_sm" onclick="myFunction.call(this)">
+                <button class="btn_sm" onclick="selectTip.call(this)">
                     <p>15%<br>$2.75</p>
                 </button>
-                <button class="btn_sm" onclick="myFunction.call(this)">
+                <button class="btn_sm" onclick="selectTip.call(this)">
                     <p>20%<br>$3.50</p>
                 </button>
-                <button class="btn_sm" onclick="myFunction.call(this)">
+                <button class="btn_sm" onclick="selectTip.call(this)">
                     <p>30%<br>$5.55</p>
                 </button>
             </div>
@@ -121,9 +122,9 @@
 
 <div id="container_payment_method" class="col_10_left">
     <h4>Payment Method</h4>
-    <div class="card_payment_xl card_payment_selected"><img src="images/img_payment_method_visa.svg"><p class="font_body">Ending in 1234</p></div>
-    <div class="card_payment_xl"><img src="images/img_payment_method_applepay.png"><p class="font_body">Apple Pay</p></div>
-    <div class="card_payment_xl"><img src="images/img_payment_method_cash.svg"><p class="font_body">Cash</p></div>
+    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_visa.svg"><p class="font_body">Ending in 1234</p></div>
+    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_applepay.png"><p class="font_body">Apple Pay</p></div>
+    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_cash.svg"><p class="font_body">Cash</p></div>
     <button class="btn_lg btn_secondary">+ Add payment method</button>
     <br>
     <button class="btn_xxl" onclick="location.href='confirmation.html';">Place Order - Total $25.32</button>
