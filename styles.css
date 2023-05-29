@@ -333,8 +333,7 @@ input[type='radio'] {
     }
 .font_link {
     font-weight: bold;
-    /* color: #C688B4; */
-    color: green;
+    color: #C688B4;
 }
     
 /* Section - Header */
