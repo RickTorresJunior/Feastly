@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-        <meta http-equiv="refresh" content="4;url=login.html"/>
+        <!-- <meta http-equiv="refresh" content="4;url=login.html"/> -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Splash</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -13,7 +13,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="script.js"></script> 
+        <script src="script.js"></script>
+        <script>
+            var timer = setTimeout(function() {
+                window.location='login.html'
+            }, 4000);
+        </script>
     </head>
     <body>
       <div class="parent vh_full bg_avocado">
