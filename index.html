@@ -14,10 +14,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="script.js"></script>
-        <script>
+        <!-- <script>
             var timer = setTimeout(function() {
                 window.location='login.html'
             }, 4000);
+        </script> -->
+        <script>
+            function videoEnded() {
+                location.href="login.html";
+                }
         </script>
     </head>
     <body>
@@ -26,7 +31,7 @@
     <!-- Logo -->
 
     <div id="container_splash_video" class="col_10">
-        <video playsinline autoplay muted loop>
+        <video id="myvid" playsinline autoplay muted onended="videoEnded()">
             <source src="videos/feastly_logo.mp4" type="video/mp4">
             <!-- Your browser does not support HTML5 video. -->
           </video>
