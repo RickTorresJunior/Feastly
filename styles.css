@@ -291,13 +291,13 @@ input[type='radio'] {
     grid-column: 2 / 10;
     }
 
-/* Splash */
+/* Screen - Splash */
 
 #container_splash_video {
     margin: 0.3rem 0 0 0;
     padding: 0 0 0 0;
 }
-video {
+#container_splash_video > video {
     width: 86vw;
 }
 .bg_avocado {
@@ -306,7 +306,7 @@ video {
     background-color: #D3E1C9;
     }
 
-/* Log In */
+/* Screen - Log In */
 
 .animation_fadein {
         animation: fadeInAnimation ease 3s;
@@ -479,6 +479,14 @@ video {
     width: 100vw;
     padding: 0 0 0.5rem 0;
     }
+
+/* Screen - QR Scan Instructions */
+
+#container_splash_video > video {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0 0 2rem 0;
+}
 
 /* Screen - QR Scan */
 
