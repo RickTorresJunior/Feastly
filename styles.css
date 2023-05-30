@@ -565,7 +565,7 @@ input[type='radio'] {
     margin: 0 0 1rem 0;
 }
 .container_modal > button {
-    grid-area: 3 / 4 / 4 / 7;
+    grid-area: 3 / 3 / 4 / 8;
     /* margin: 0 2rem 0 2rem; */
 }
 .btn_modal {
@@ -576,10 +576,11 @@ input[type='radio'] {
     font-weight: 600;
     background-color: #fff;
     /* background-color: #F68A58; */
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 4px;
     border: none;
-    white-space: nowrap;
+    max-width: 33vw;
+    margin: 0 auto 0 auto;
     }
 .font_success {
     color: #F68A58;
