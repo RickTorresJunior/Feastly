@@ -542,7 +542,7 @@ input[type='radio'] {
 
 .container_modal {
     display: grid;
-    margin: 1rem;
+    margin: 1rem 2rem 1rem 2rem;
 }
 .container_modal br {
     line-height: 3;
