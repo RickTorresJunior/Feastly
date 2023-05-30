@@ -532,7 +532,7 @@ input[type='radio'] {
     border-radius: 10px;
     /* width: 86%; */
     width: 86vw;
-    /* max-width: 22rem; */
+    max-width: 26rem;
     box-shadow: 15px 15px 20px 0px rgb(52, 52, 52);
 }
 .container_modal {
