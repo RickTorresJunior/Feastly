@@ -20,7 +20,7 @@
         <div class="container_header">
             <div class="btn_back hide"><img src="images/btn_back_arrow_default.svg" alt="Button - Bell to call sever"/></div>
             <div class="header_screen_title"><img src="images/btn_feastly_logo.png"></div>
-            <div class="btn_avatar show"><img src="images/btn_avatar_server.png" alt="Button - alert server"/></div>
+            <div class="btn_avatar hide"><img src="images/btn_avatar_server.png" alt="Button - alert server"/></div>
         </div>
 
         <!-- Logo and Welcome Message -->
@@ -45,10 +45,28 @@
               </video>
         </div> -->
 
-        <div id="container_btn_startordering" class="col_10">
+        <!-- <div id="container_btn_startordering" class="col_10">
             <button class="btn_xxl" onclick="location.href='qrscan.html';">Scan Code</button>
             <h4>Scan the provided QR code to have a table assigned to you to access the menu</h4>
+        </div> -->
+
+        <div id="container_btn_startordering" class="col_10">
+            <!-- <button id="myBtn" class="btn_xxl">Scan Code</button> -->
+            <button id="myBtn" class="btn_xxl">Scan Code</button>
+            <h4>Scan the provided QR code to have a table assigned to you to access the menu</h4>
         </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal_content">
+        <!-- <span class="close2">&times;</span> -->
+        <div class="container_modal"><img class="icon_server" src="images/img_icon_server.svg" alt="Photo of server"/><p class="font_body modal_server_name">Server: <span class="white">Melissa</span></p><img class="icon_bell" src="images/btn_bell_circle_white.svg" alt="Button - alert server"/><br><p class="font_body modal_body">Need help with something?<br><span class="white">Alert your server using the icon on the top right of the screen</span></p><br><button class="btn_modal" onclick="location.href='qrscan.html';">Got it!</button></div>
+      </div>
+
+    </div>
 
         <!-- Footer -->
 
@@ -56,5 +74,33 @@
             <button onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation button - Home"><span>Home</span></button><button class="footer_nav_selected" onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_active.svg" alt="Navigation button - QR Scan"><span class="footer_nav_selected">QR Scan</span></button><button><img src="images/icon_nav_myorder_default.svg" alt="Navigation button - Shopping Cart">My Order</button><button><img src="images/icon_nav_profile_default.svg" alt="Navigation button - User Profile">Profile</button>
         </div>
     </div> <!-- End of parent -->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
 </body>
 </html>
