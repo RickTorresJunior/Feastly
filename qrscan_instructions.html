@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>QR Scan</title>
+        <title>QR Scan - Instructions</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,19 +25,29 @@
 
         <!-- Logo and Welcome Message -->
 
-        <div id="container_splash_image" class="col_10">
-            <img src="images/photo_qrscan.png" alt="image of QR Code">
-        </div>
+        <div class="container_splash_image">
+            <div class="image-stack">
+              <div class="image-stack__item image-stack__item--top">
+                <img id="btn_tgd_yellow" class="img_overlay" src="images/btn_tgd_yellow.svg" alt="">
+              </div>
+              <div class="image-stack__item video-stack__item--bottom">
+                <video id="splash_video_qr" playsinline autoplay muted loop>
+                    <source src="videos/qrscan_scanformenu.mp4" type="video/mp4">
+                  </video>
+                <!-- <img class="img_overlay" src="images/photo_qrscan.png" alt=""> -->
+              </div>
+            </div>
+          </div>
 
-        <div id="container_logo_tgd_circle">
-            <img src="images/img_logo_thegreydog_circle.png" alt="The Grey Dog logo and typeface"/>
-            <h2 id="venue_title">The Grey Dog</h2>
-        </div>
-        <div id="container_qrscan_table_number" class="col_10">
-            <h4>Welcome back, Sarah!<br>Table 12</h4>
-        </div>
+        <!-- <div id="container_splash_video" class="col_10">
+            <video playsinline autoplay muted loop>
+                <source src="videos/qrscan_scanformenu.mp4" type="video/mp4">
+              </video>
+        </div> -->
+
         <div id="container_btn_startordering" class="col_10">
-            <button class="btn_xxl" onclick="location.href='menu.html';">Start Ordering</button>
+            <button class="btn_xxl" onclick="location.href='qrscan.html';">Scan Code</button>
+            <h4>Scan the provided QR code to have a table assigned to you to access the menu</h4>
         </div>
 
         <!-- Footer -->
