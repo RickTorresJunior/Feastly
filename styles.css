@@ -502,10 +502,12 @@ input[type='radio'] {
     text-align: center;
     width: 14vh;
 }
-
-/* Modal Window */
+#container_scan_code > h4 {
+    margin: 0 2rem 0 2rem;
+}
 
 /* The Modal (background) */
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -522,14 +524,6 @@ input[type='radio'] {
   
   /* Modal Content */
 
-/* .modal-content {
-    background-color: #F68A58;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-} */
-
 .modal_content {
     display: grid;
     text-align: left;
@@ -539,7 +533,6 @@ input[type='radio'] {
     width: 80%;
     max-width: 20rem;
 }
-
 .container_modal {
     display: grid;
     margin: 1rem 1.5rem 1rem 1.5rem;
@@ -547,14 +540,12 @@ input[type='radio'] {
 .container_modal br {
     line-height: 3;
 }
-
 .icon_server {
     grid-area: 1 / 1 / 2 / 3;
 }
 .icon_bell {
     grid-area: 1 / 8 / 2 / 10;
 }
-
 .modal_server_name {
     color: #000;
     font-weight: 400;
@@ -584,21 +575,6 @@ input[type='radio'] {
     border-radius: 4px;
     border: none;
     }
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 /* Screen - QR Scan */
 
