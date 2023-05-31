@@ -277,9 +277,17 @@ input[type='radio'] {
 
 /* Adds Gradient Background */
 
-.bg_gradient {
+/* .bg_gradient {
     background: url("images/img_bg_gradient.svg");
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} */
+.bg_gradient {
+    background: url(images/img_bg_gradient.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100vh;
 }
@@ -504,13 +512,17 @@ input[type='radio'] {
     border: 1px solid green;
 } */
 
+/* #parent_no_orders {
+    display: grid;
+    padding: 0 0 8rem 0;
+} */
+
 #container_header_no_orders {
     background: transparent;
 }
 #container_no_orders {
-    padding: 0 0 10rem 0;
+    padding: 0 0 0 0;
     margin: 2rem 0 0 0;
-    border: 1px solid green;
     /* margin: -11vw 0 0 0; */
 }
 .img_no_orders {
