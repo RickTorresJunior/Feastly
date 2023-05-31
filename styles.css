@@ -321,6 +321,12 @@ input[type='radio'] {
     margin: 0.3rem 0 0 0;
     padding: 0 0 0 0;
 }
+
+#container_splash_video > video {
+    width: 86vw;
+    max-width: 30rem;
+    padding: 0 0 2rem 0;
+}
 /* .splash_video {
     width: 100vw;
 } */
@@ -351,9 +357,9 @@ input[type='radio'] {
     }
 .container_login {
     display: grid;
-    padding: 0 0 10rem 0;
+    padding: 0 0 6rem 0;
     margin: 0 2.5rem 0 2rem;
-    border: 1px solid green;
+    border: 2px solid magenta;
     /* margin: 0 2.5rem 0 2rem; */
     /* max-width: 86vw; */
     }
@@ -381,7 +387,7 @@ input[type='radio'] {
     font-size: 1rem;
     color: #000;
     height: 2rem;
-    /* width: 86vw; */
+    width: auto;
     margin: 0 0 1rem 0;
     padding: 0.5rem 0 0.5rem 1rem;
     border: none;
@@ -533,11 +539,6 @@ input[type='radio'] {
 
 /* Screen - QR Scan Instructions */
 
-#container_splash_video > video {
-    width: 100vw;
-    max-width: 100vw;
-    padding: 0 0 2rem 0;
-}
 #splash_video_qr {
     width: 100%;
     display: block;
