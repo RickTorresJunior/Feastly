@@ -72,13 +72,13 @@ body {
     }
 .hide {
     visibility: hidden;
-}
+    }
 .show {
     visibility: visible;
-}
+    }
 .transparent_bg {
     background: transparent;
-}
+    }
 
 /* Typography */
 
@@ -1510,4 +1510,34 @@ input[type='radio'] {
 .container_profile_options_list > hr {
     display: grid;
     grid-area: auto / 1 / auto / 10;
+}
+
+/* Modal - Payment Confirmation */
+
+.modal_content_confirmation {
+    display: grid;
+    text-align: left;
+    background-color: #D5E2CD;
+    margin: auto;
+    border-radius: 10px;
+    /* width: 86%; */
+    width: 86vw;
+    max-width: 26rem;
+    box-shadow: 15px 15px 20px 0px rgb(52, 52, 52);
+}
+.container_modal_confirmation {
+    display: grid;
+    text-align: center;
+    line-height: 1;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+}
+.container_modal_confirmation > .modal_body {
+    line-height: 1;
+}
+.container_modal_confirmation br {
+    line-height: 2;
+}
+.container_modal_confirmation > button {
+    grid-area: auto / 1 / auto / 11;
+    margin: 0.5rem auto 0.5rem auto;
 }
