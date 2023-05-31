@@ -76,6 +76,9 @@ body {
 .show {
     visibility: visible;
 }
+.transparent_bg {
+    background: transparent;
+}
 
 /* Typography */
 
@@ -278,6 +281,7 @@ input[type='radio'] {
     background: url("images/img_bg_gradient.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 /* Column Width Classes */
@@ -485,6 +489,33 @@ input[type='radio'] {
     width: 100vw;
     padding: 0 0 0.5rem 0;
     }
+
+
+/* Screen - No Orders */
+
+/* .parent_no_orders {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    scroll-behavior: smooth;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0
+    border: 1px solid green;
+} */
+
+#container_header_no_orders {
+    background: transparent;
+}
+#container_no_orders {
+    padding: 0 0 0 0;
+    margin: 2rem 0 0 0;
+    /* margin: -11vw 0 0 0; */
+}
+.img_no_orders {
+    width: 90vw;
+    max-width: 28rem;
+}
 
 /* Screen - QR Scan Instructions */
 
