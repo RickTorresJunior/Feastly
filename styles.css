@@ -372,7 +372,8 @@ input[type='radio'] {
     font-size: 1rem;
     color: #9B9595;
     height: 2rem;
-    /* width: 86vw; */
+    justify-self: center;
+    width: 78vw;
     margin: 0 0 1rem 0;
     padding: 0.5rem 0 0.5rem 1rem;
     border: none;
@@ -464,9 +465,12 @@ input[type='radio'] {
 #fsearch {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
-    color: #000;
+    color: red;
+    /* color: #000; */
     font-weight: 600;
     height: 2rem;
+    justify-self: center;
+    width: 86vw;
     /* width: 86vw; */
     margin: 0 0 0 0;
     padding: 0.5rem 0 0.5rem 1rem;
