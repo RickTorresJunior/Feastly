@@ -30,7 +30,7 @@ select, option, button, a {
     appearance: unset;
     }
 html, body {
-    height: 100vh;
+    height: 100%;
     height: calc(var(--vh, 1vh) * 100);
     }
 html {
@@ -283,15 +283,23 @@ input[type='radio'] {
     background-size: cover;
     height: 100vh;
 } */
-.bg_gradient {
+/* .bg_gradient {
     background: url(images/img_bg_gradient.svg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
-}
-
+} */
+.bg_gradient {
+    /* The image used */
+    background-image: url("images/img_bg_gradient.svg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 /* Column Width Classes */
 
 .col_10 {
@@ -523,7 +531,7 @@ input[type='radio'] {
 #container_no_orders {
     padding: 0 0 6rem 0;
     margin: 2rem 0 0 0;
-    border: 1px solid purple;
+    border: 1px solid aqua;
     /* margin: -11vw 0 0 0; */
 }
 .img_no_orders {
