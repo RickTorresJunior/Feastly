@@ -323,13 +323,10 @@ input[type='radio'] {
 }
 
 #container_splash_video > video {
-    width: 86vw;
+    width: 82vw;
     max-width: 30rem;
     padding: 0 0 2rem 0;
 }
-/* .splash_video {
-    width: 100vw;
-} */
 .bg_avocado {
     background-size: cover;
     /* background-color: #D5E2CD; */
@@ -352,14 +349,14 @@ input[type='radio'] {
         }
     }
 .img_login_logo {
-    max-width: 90vw;
+    max-width: 84vw;
     margin: 6rem 0 0 0;
     }
 .container_login {
     display: grid;
     padding: 0 0 6rem 0;
     margin: 0 2.5rem 0 2rem;
-    border: 2px solid magenta;
+    /* border: 2px solid magenta; */
     /* margin: 0 2.5rem 0 2rem; */
     /* max-width: 86vw; */
     }
