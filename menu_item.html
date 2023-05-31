@@ -19,9 +19,9 @@
       <div class="parent">
 
         <div id="container_header" class="container_header">
-            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Bell to call sever"/></div>
-            <div class="header_screen_title"><img src="images/btn_feastly_logo.png"></div>
-            <div class="btn_avatar"><img src="images/btn_bell_orange.svg" alt="Button - alert server"/></div>
+            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"/></div>
+            <div class="header_screen_title"><img src="images/btn_feastly_logo.png" alt="Button - Home" onclick="location.href='home.html';"></div>
+            <div class="btn_avatar"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
         </div>
 
         <div id="container_subheader_splash" class="col_10">
@@ -89,11 +89,13 @@
             <button class="btn_xxl" onclick="location.href='myorder.html';">Add 1 to Cart - $18.50</button>
             </div>
         </div> <!-- End of Container - Menu Item Options -->
+
     <!-- Footer Nav -->
 
     <div class="footer">
-        <button onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation button - Home"><span>Home</span></button><button class="footer_nav_selected" onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation button - QR Scan"><span>QR Scan</span></button><button><img src="images/icon_nav_myorder_active.svg" alt="Navigation button - My order"><span class="footer_nav_selected">My Order</span></button><button><img src="images/icon_nav_profile_default.svg" alt="Navigation button - User Profile">Profile</button>
+        <button onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><span>Home</span></button><button onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><span>QR Scan</span></button><button onclick="location.href='no_orders.html';"><img src="images/icon_nav_myorder_active.svg" alt="Navigation Button - My Order"><span class="footer_nav_selected">My Order</span></button><button onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><span>Profile</span></button>
     </div>
+
 </div> <!-- End of Parent -->
 </body>
 </html>
