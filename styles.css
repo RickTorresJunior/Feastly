@@ -351,8 +351,9 @@ input[type='radio'] {
     }
 .container_login {
     display: grid;
-    padding: 0 0 0 0;
+    padding: 0 0 10rem 0;
     margin: 0 2.5rem 0 2rem;
+    border: 1px solid green;
     /* margin: 0 2.5rem 0 2rem; */
     /* max-width: 86vw; */
     }
