@@ -1504,7 +1504,7 @@ input[type='radio'] {
 }
 #divider_profile_list {
     width: 90vw;
-    margin: 1rem 0 1rem 1rem;
+    margin: 0.5rem 0 1rem 1rem;
     }
 .container_profile_options_list > hr {
     display: grid;
