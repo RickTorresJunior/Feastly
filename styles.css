@@ -1441,7 +1441,8 @@ input[type='radio'] {
       "b b b b b b b b";
     align-items: start;
     border-radius: 10px;
-    border: 2px solid #F68A58;
+    /* border: 2px solid #F68A58; */
+    border: 2px solid green;
     }
 .profile_buttons {
     grid-area: a;
@@ -1452,7 +1453,7 @@ input[type='radio'] {
     }
 .btn_profile {
     max-width: 22vw;
-    padding: 0 1rem 0 1rem;
+    padding: 0 4vw 0 4vw;
     background: transparent;
     border: none;
     /* border: 1px solid red; */
