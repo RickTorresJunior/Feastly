@@ -354,7 +354,7 @@ input[type='radio'] {
     }
 .container_login {
     display: grid;
-    padding: 0 0 6rem 0;
+    padding: 0 0 3rem 0;
     margin: 0 2.5rem 0 2rem;
     /* margin: 0 2.5rem 0 2rem; */
     /* max-width: 86vw; */
