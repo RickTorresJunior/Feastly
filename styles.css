@@ -507,13 +507,23 @@ input[type='radio'] {
 
 /* Screen - No Orders */
 
-#container_header_no_orders {
+/* #container_header_no_orders {
     background: transparent;
+} */
+
+.container_header_scrolls {
+    display: grid;
+    grid-column: 1 / -1;
+    padding: 1.5rem 0 1.5rem 0;
+    margin: 0 0 0 0;
+    max-height: 4vh;
+    background-color: transparent;
+    border: 1px solid green;
 }
 #container_no_orders {
     padding: 0 0 10rem 0;
     margin: 2rem 0 0 0;
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     /* margin: -11vw 0 0 0; */
 }
 .img_no_orders {
