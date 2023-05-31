@@ -356,7 +356,6 @@ input[type='radio'] {
     display: grid;
     padding: 0 0 6rem 0;
     margin: 0 2.5rem 0 2rem;
-    border: 2px solid red;
     /* margin: 0 2.5rem 0 2rem; */
     /* max-width: 86vw; */
     }
