@@ -518,7 +518,6 @@ input[type='radio'] {
     margin: 0 0 0 0;
     max-height: 4vh;
     background-color: transparent;
-    border: 1px solid green;
 }
 #container_no_orders {
     padding: 0 0 10rem 0;
