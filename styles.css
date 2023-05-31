@@ -273,7 +273,7 @@ input[type='radio'] {
     }
 .vh_full {
     height: 87vh;
-}
+    }
 
 /* Adds Gradient Background */
 
@@ -291,15 +291,13 @@ input[type='radio'] {
     background-size: cover;
 } */
 .bg_gradient {
-    /* The image used */
     background-image: url("images/img_bg_gradient.svg");
-    /* Full height */
     height: 100%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
 /* Column Width Classes */
 
 .col_10 {
@@ -509,29 +507,13 @@ input[type='radio'] {
 
 /* Screen - No Orders */
 
-/* .parent_no_orders {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    scroll-behavior: smooth;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0
-    border: 1px solid green;
-} */
-
-/* #parent_no_orders {
-    display: grid;
-    padding: 0 0 8rem 0;
-} */
-
 #container_header_no_orders {
     background: transparent;
 }
 #container_no_orders {
-    padding: 0 0 6rem 0;
-    margin: 2rem 0 0 0;
-    border: 1px solid aqua;
+    padding: 0 0 0 0;
+    margin: 2rem 0 6rem 0;
+    border: 1px solid red;
     /* margin: -11vw 0 0 0; */
 }
 .img_no_orders {
@@ -679,7 +661,6 @@ input[type='radio'] {
 .video-stack__item--bottom {
     grid-column: 1 / -1;
     grid-row: 1;
-    /* border: 2px solid purple; */
     }
 
 .image-stack__item--top {
