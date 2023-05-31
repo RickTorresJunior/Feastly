@@ -1444,7 +1444,7 @@ input[type='radio'] {
 .container_profile_options {
     display: grid;
     grid-area: auto / 1 / auto / 11;
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 2rem 1rem 3rem 1rem;
     padding: 1rem 0 1rem 0;
     /* gap: 10px; */
     grid-template-areas:
@@ -1455,7 +1455,7 @@ input[type='radio'] {
     align-items: start;
     border-radius: 10px;
     /* border: 2px solid #F68A58; */
-    border: 2px solid green;
+    border: 2px solid #F68A58;
     }
 .profile_buttons {
     grid-area: a;
@@ -1487,3 +1487,26 @@ input[type='radio'] {
 .btn_sm a:visited, .btn_sm a:active {
     color: #000;
     }
+.container_profile_options_list {
+    display: grid;
+    grid-area: auto / 1 / auto / -1;
+    margin: 0 0 4rem 0;
+}
+.btn_icon_xs {
+    display: grid;
+    grid-area: auto / 2 / auto / 3;
+    max-width: 2rem;
+}
+.container_profile_options_list > p {
+    display: grid;
+    grid-area: auto / 3 / auto / 10;
+    align-self: center;
+}
+#divider_profile_list {
+    width: 90vw;
+    margin: 1rem 0 1rem 1rem;
+    }
+.container_profile_options_list > hr {
+    display: grid;
+    grid-area: auto / 1 / auto / 10;
+}
