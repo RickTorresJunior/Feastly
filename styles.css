@@ -1541,3 +1541,11 @@ input[type='radio'] {
     grid-area: auto / 1 / auto / 11;
     margin: 0.5rem auto 0.5rem auto;
 }
+
+/* 404 Error Page */
+
+.img_404 {
+    margin: 1rem 0 0 0;
+    width: 76vw;
+    max-width: 28rem;
+}
