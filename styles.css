@@ -1545,7 +1545,7 @@ input[type='radio'] {
 /* 404 Error Page */
 
 .img_404 {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 2rem 0;
     width: 76vw;
     max-width: 28rem;
 }
