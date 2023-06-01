@@ -46,7 +46,7 @@
                 <p class="font_body">scrambled eggs<br>french toast<br>sausage</p>
             </div>
             <div class="myorder_btn">
-                <button><img src="images/btn_myorder.svg"></button>
+                <button><img src="images/btn_myorder.svg" alt="Press here to reduce or increase order quantity"></button>
             </div>
           </div>
           
@@ -107,7 +107,7 @@
             </div>
         </div>
     
-        <!-- Modal Window -->
+        <!-- Modal -->
 
         <div id="modal_confirm_payment" class="modal">
 
@@ -116,26 +116,24 @@
                   <button class="btn_login btn_cancel" onclick="location.href='order_summary.html';">Cancel</button></div>
             </div>
         
-        </div> <!-- End of Modal -->
+        </div> <!-- End of Modal-->
 
-        <!-- Footer Nav -->
+    <!-- Footer Nav -->
 
     <div class="footer">
         <button onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><span>Home</span></button><button onclick="location.href='qrscan.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><span>QR Scan</span></button><button onclick="location.href='order_summary.html';" class="btn_myorder_qty"><img src="images/icon_nav_myorder_active.svg" alt="Navigation Button - My Order"><span class="footer_nav_selected">My Order</span></button><button onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><span>Profile</span></button>
-    </div>
-
+    </div> <!-- End of Footer Nav -->
 </div> <!-- End of Parent -->
 
 <!-- Container - Payment Method -->
 
 <div id="container_payment_method" class="col_10_left">
     <h4>Payment Method</h4>
-    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_visa.svg"><p class="font_body">Ending in 1234</p></div>
-    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_applepay.png"><p class="font_body">Apple Pay</p></div>
-    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_cash.svg"><p class="font_body">Cash</p></div>
+    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></div>
+    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_applepay.png" alt="Press here to select Apple Pay"><p class="font_body">Apple Pay</p></div>
+    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_cash.svg" alt="Press here to select Cash"><p class="font_body">Cash</p></div>
     <button class="btn_lg btn_secondary">+ Add payment method</button>
     <br>
-    <!-- <button class="btn_xxl" onclick="location.href='confirmation.html';">Place Order - Total $25.32</button> -->
     <button id="btn_confirm_payment" class="btn_xxl">Place Order - Total $25.32</button>
     <button class="btn_xxl btn_cancel" onclick="location.href='home.html';">Cancel</button>
 </div> <!-- End of Payment Method -->
