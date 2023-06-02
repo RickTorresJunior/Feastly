@@ -607,7 +607,7 @@ input[type='radio'] {
     /* width: 86%; */
     width: 86vw;
     max-width: 26rem;
-    box-shadow: 15px 15px 20px 0px rgb(52, 52, 52);
+    box-shadow: 5px 5px 20px 0px rgb(74, 74, 74);
     }
 .container_modal {
     display: grid;
@@ -969,7 +969,7 @@ input[type='radio'] {
     position: absolute;
     pointer-events: none;
     }
-
+    
 /* My Order - Receipt */
 
 .container_myorder_receipt {
@@ -1246,7 +1246,7 @@ input[type='radio'] {
     border-radius: 10px;
     width: 86vw;
     max-width: 26rem;
-    box-shadow: 15px 15px 20px 0px rgb(52, 52, 52);
+    box-shadow: 5px 5px 20px 0px rgb(74, 74, 74);
 }
 .container_modal_confirmation {
     display: grid;
@@ -1443,7 +1443,8 @@ input[type='radio'] {
     text-transform: uppercase;
     white-space: nowrap;
     color: #000;
-    font-size: 2.8vw;
+    font-size: 0.75rem;
+    /* font-size: 2.8vw; */
     font-weight: 400;
     background-color: #ffffff;
     padding: 1rem 1rem 1rem 1rem;
