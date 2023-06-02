@@ -14,7 +14,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="script.js"></script>
     </head>
-
       <body>
 
       <div class="parent">
@@ -60,20 +59,6 @@
             <div class="tip_title">
                 <h4>Leave a Tip</h4>
             </div>
-            <!-- <div class="tip_buttons">
-                <button class="btn_sm" onclick="selectTip.call(this)">
-                    <p>10%<br>$1.85</p>
-                </button>
-                <button class="btn_sm" onclick="selectTip.call(this)">
-                    <p>15%<br>$2.75</p>
-                </button>
-                <button class="btn_sm" onclick="selectTip.call(this)">
-                    <p>20%<br>$3.50</p>
-                </button>
-                <button class="btn_sm" onclick="selectTip.call(this)">
-                    <p>30%<br>$5.55</p>
-                </button>
-            </div> -->
             <div id="tip_buttons" class="tip_buttons">
                 <button class="btn_tip btn_tip_selected">
                     <p>10%<br>$1.85</p>
@@ -143,13 +128,9 @@
 
 <div id="container_payment_method" class="col_10_left">
     <h4>Payment Method</h4>
-    <!-- <button class="card_payment_xl card_payment_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
-    <button class="card_payment_xl"><img src="images/img_payment_method_applepay.png" alt="Press here to select Apple Pay"><p class="font_body">Apple Pay</p></button>
-    <button class="card_payment_xl"><img src="images/img_payment_method_cash.svg" alt="Press here to select Cash"><p class="font_body">Cash</p></button>
-    <button class="btn_lg btn_secondary">+ Add payment method</button> -->
-    <button class="card_payment_xl2 card_payment_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
-    <button class="card_payment_xl2"><img src="images/img_payment_method_applepay.png" alt="Press here to select Visa"><p class="font_body">Apple Pay</p></button>
-    <button class="card_payment_xl2"><img src="images/img_payment_method_cash.svg" alt="Press here to select Visa"><p class="font_body">Cash</p></button>
+    <button class="card_payment_xl card_payment_xl_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
+    <button class="card_payment_xl"><img src="images/img_payment_method_applepay.png" alt="Press here to select Visa"><p class="font_body">Apple Pay</p></button>
+    <button class="card_payment_xl"><img src="images/img_payment_method_cash.svg" alt="Press here to select Visa"><p class="font_body">Cash</p></button>
     <br>
     <button class="btn_lg btn_secondary">+ Add payment method</button>
     <button id="btn_confirm_payment" class="btn_xxl">Place Order - Total $25.32</button>
@@ -185,7 +166,7 @@
 </script>
 
 <script>
-    // Add active class to the current button (highlight it)
+    // Add active class to the current button
     var header = document.getElementById("tip_buttons");
     var btns = header.getElementsByClassName("btn_tip");
     for (var i = 0; i < btns.length; i++) {
@@ -200,12 +181,12 @@
 <script>
     // Add active class to the current payment method
     var header = document.getElementById("container_payment_method");
-    var btns = header.getElementsByClassName("card_payment_xl2");
+    var btns = header.getElementsByClassName("card_payment_xl");
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("card_payment_selected");
-      current[0].className = current[0].className.replace("card_payment_selected", "");
-      this.className += " card_payment_selected";
+      var current = document.getElementsByClassName("card_payment_xl_selected");
+      current[0].className = current[0].className.replace("card_payment_xl_selected", "");
+      this.className += " card_payment_xl_selected";
       });
     }
 </script>
