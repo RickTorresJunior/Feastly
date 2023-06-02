@@ -143,8 +143,30 @@ button {
     margin: 0 0.5rem 0 0.5rem;
     background: transparent;
     border: none;
-    /* justify-self: center; */
 }
+/* .btn_sm {
+    color: #000;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    margin: 0 0.5rem 0 0.5rem;
+    max-width: 18vw;
+    background-color: #D5E2CD;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    }
+.btn_sm_selected {
+    color: #fff;
+    font-weight: 400;
+    background-color: #F68A58;
+    border: 1px solid #F68A58;
+    }
+.btn_sm a:visited, .btn_sm a:active {
+    color: #000;
+    } */
 .btn_md {
     color: #fff;
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -1031,34 +1053,6 @@ input[type='radio'] {
 
 /* Screen - Order Summary */
 
-/* Tip Buttons v2 */
-
-.btn_tip {
-    color: #000;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-    margin: 0 0.5rem 0 0.5rem;
-    max-width: 18vw;
-    background-color: #D5E2CD;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    }
-.btn_tip_selected {
-    color: #fff;
-    font-weight: 400;
-    background-color: #F68A58;
-    border: 1px solid #F68A58;
-    }
-.btn_tip a:visited, .btn_sm a:active {
-    color: #000;
-    }
-
-/* Tip Buttons */
-
 .container_tip {
     display: grid;
     grid-area: auto / 1 / auto / 11;
@@ -1085,7 +1079,13 @@ input[type='radio'] {
     margin: 0 0 1rem 0;
     text-align: center;
     }
-/* .btn_sm {
+.tip_buttons {
+    grid-area: c;
+    white-space: nowrap; 
+    grid-column: 1 / 11;
+    text-align: center;
+    }
+.btn_tip {
     color: #000;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
@@ -1099,20 +1099,14 @@ input[type='radio'] {
     border-radius: 10px;
     text-align: center;
     }
-.btn_sm_selected {
+.btn_tip_selected {
     color: #fff;
     font-weight: 400;
     background-color: #F68A58;
     border: 1px solid #F68A58;
     }
-.btn_sm a:visited, .btn_sm a:active {
+.btn_tip a:visited, .btn_sm a:active {
     color: #000;
-    } */
-.tip_buttons {
-    grid-area: c;
-    white-space: nowrap; 
-    grid-column: 1 / 11;
-    text-align: center;
     }
 .tip_subtotal_title {
     grid-area: e;
@@ -1194,42 +1188,6 @@ input[type='radio'] {
     padding: 0 0 0 1rem;
     }
 .card_payment_xl {
-    cursor: pointer;
-    display: grid;
-    text-align: left;
-    grid-area: auto / 1 / auto / -1;
-    grid-template-areas:
-    "a a a a a a a a"
-    "a a a a a a a a";
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 0 0 1rem 0;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    width: 84vw;
-    max-width: 24rem;
-    align-items: center;
-    background-color: #fff;
-    }
-.card_payment_xl img {
-    grid-area: a;
-    width: 4rem;
-    box-shadow: 2px 2px 8px #d7d7d7;
-    }
-.card_payment_xl p {
-    grid-area: a;
-    margin: 0 0 0 6rem;
-    align-self: center;
-        /* justify-self: first baseline;
-    align-self: last baseline; */
-    /* text-align: left; */
-    }
-.card_payment_xl a:visited, .card_payment_xl a:active {
-    color: #fff;
-    }
-
-/* Button Redesign */
-
-.card_payment_xl2 {
     grid-area: auto / 1 / auto / -1;
     text-align: left;
     cursor: pointer;
@@ -1240,26 +1198,26 @@ input[type='radio'] {
     width: 84vw;
     max-width: 24rem;
     min-width: 14rem;
-    /* align-items: center; */
     background-color: #fff;
     }
-    .card_payment_xl2 > img {
-      object-fit: none;
-      width: 4rem;
-      vertical-align: middle;
-      margin: 0 1rem 0 0;
-      border: 1px solid red;
+.card_payment_xl > img {
+    object-fit: none;
+    width: 4rem;
+    vertical-align: middle;
+    margin: 0 1rem 0 0;
     }
-    .card_payment_xl2 > p {
-      display: inline-block;
-      vertical-align: middle;
-      border: 1px solid green;
+.card_payment_xl > p {
+    display: inline-block;
+    vertical-align: middle;
     }
-    .card_payment_selected, .card_payment_selected p {
-        color: #fff;
-        font-weight: 500;
-        background-color: #F68A58;
-        }
+.card_payment_xl_selected, .card_payment_xl_selected p {
+    color: #fff;
+    font-weight: 500;
+    background-color: #F68A58;
+    }
+.card_payment_xl a:visited, .card_payment_xl a:active {
+    color: #fff;
+    }
 #container_payment_method .btn_lg {
     margin: 0 0 2rem 0;
     }
