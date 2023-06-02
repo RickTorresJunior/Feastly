@@ -1207,7 +1207,9 @@ input[type='radio'] {
     border-radius: 10px;
     width: 84vw;
     max-width: 24rem;
+    align-items: center;
     background-color: #fff;
+    
     }
 .card_payment_xl img {
     grid-area: a;
@@ -1217,6 +1219,7 @@ input[type='radio'] {
 .card_payment_xl p {
     grid-area: a;
     margin: 0 0 0 6rem;
+    align-self: center;
         /* justify-self: first baseline;
     align-self: last baseline; */
     /* text-align: left; */
