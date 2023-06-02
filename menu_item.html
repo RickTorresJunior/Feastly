@@ -18,10 +18,10 @@
       <body>
       <div class="parent">
 
-        <div id="container_header" class="container_header">
-            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"/></div>
-            <div class="header_screen_title"><img src="images/btn_feastly_logo.png" alt="Button - Home" onclick="location.href='home.html';"></div>
-            <div class="btn_avatar"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+        <div class="container_header">
+            <div class="btn_back"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
         </div>
 
         <div id="container_subheader_splash" class="col_10">
@@ -72,7 +72,6 @@
                     </select>
                 </div>
                     <form id='myform' method='POST' class='quantity' action='#'>
-                        <!-- <input type='button' value='-' class='qtyminus minus' field='quantity'/> -->
                         <button type="button" class='qtyminus minus' field='quantity'>
                             <img class="btn_quantity" src="images/btn_minus.svg" alt="Press here to reduce order quantity"/>
                           </button>
