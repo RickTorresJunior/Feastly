@@ -1386,6 +1386,9 @@ input[type='radio'] {
 .btn_profile > p {
     text-align: center;
     }
+.btn_profile a:visited, .btn_profile a:active {
+    color: #000;
+    }
 .container_profile_options_list {
     display: grid;
     grid-area: auto / 1 / auto / -1;
