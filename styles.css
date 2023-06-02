@@ -1196,10 +1196,11 @@ input[type='radio'] {
 .card_payment_xl {
     cursor: pointer;
     display: grid;
+    text-align: left;
     grid-area: auto / 1 / auto / -1;
     grid-template-areas:
-    "a b b b b b b b"
-    "a b b b b b b b";
+    "a a a a a a a a"
+    "a a a a a a a a";
     padding: 1rem 1rem 1rem 1rem;
     margin: 0 0 1rem 0;
     border: 2px solid #ccc;
@@ -1214,9 +1215,10 @@ input[type='radio'] {
     box-shadow: 2px 2px 8px #d7d7d7;
     }
 .card_payment_xl p {
-    grid-area: b;
-    justify-self: first baseline;
-    align-self: last baseline;
+    grid-area: a;
+    margin: 0 0 0 6rem;
+        /* justify-self: first baseline;
+    align-self: last baseline; */
     /* text-align: left; */
     }
 .card_payment_selected, .card_payment_selected p {
