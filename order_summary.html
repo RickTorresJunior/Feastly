@@ -143,11 +143,15 @@
 
 <div id="container_payment_method" class="col_10_left">
     <h4>Payment Method</h4>
-    <button class="card_payment_xl card_payment_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
+    <!-- <button class="card_payment_xl card_payment_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
     <button class="card_payment_xl"><img src="images/img_payment_method_applepay.png" alt="Press here to select Apple Pay"><p class="font_body">Apple Pay</p></button>
     <button class="card_payment_xl"><img src="images/img_payment_method_cash.svg" alt="Press here to select Cash"><p class="font_body">Cash</p></button>
-    <button class="btn_lg btn_secondary">+ Add payment method</button>
+    <button class="btn_lg btn_secondary">+ Add payment method</button> -->
+    <button class="card_payment_xl2 card_payment_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
+    <button class="card_payment_xl2"><img src="images/img_payment_method_applepay.png" alt="Press here to select Visa"><p class="font_body">Apple Pay</p></button>
+    <button class="card_payment_xl2"><img src="images/img_payment_method_cash.svg" alt="Press here to select Visa"><p class="font_body">Cash</p></button>
     <br>
+    <button class="btn_lg btn_secondary">+ Add payment method</button>
     <button id="btn_confirm_payment" class="btn_xxl">Place Order - Total $25.32</button>
     <button class="btn_xxl btn_cancel" onclick="location.href='home.html';">Cancel</button>
 </div> <!-- End of Payment Method -->
@@ -196,7 +200,7 @@
 <script>
     // Add active class to the current payment method
     var header = document.getElementById("container_payment_method");
-    var btns = header.getElementsByClassName("card_payment_xl");
+    var btns = header.getElementsByClassName("card_payment_xl2");
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("card_payment_selected");
