@@ -60,7 +60,7 @@
             <div class="tip_title">
                 <h4>Leave a Tip</h4>
             </div>
-            <div class="tip_buttons">
+            <!-- <div class="tip_buttons">
                 <button class="btn_sm" onclick="selectTip.call(this)">
                     <p>10%<br>$1.85</p>
                 </button>
@@ -71,6 +71,20 @@
                     <p>20%<br>$3.50</p>
                 </button>
                 <button class="btn_sm" onclick="selectTip.call(this)">
+                    <p>30%<br>$5.55</p>
+                </button>
+            </div> -->
+            <div id="tip_buttons" class="tip_buttons">
+                <button class="btn_tip btn_tip_selected">
+                    <p>10%<br>$1.85</p>
+                </button>
+                <button class="btn_tip">
+                    <p>15%<br>$2.75</p>
+                </button>
+                <button class="btn_tip">
+                    <p>20%<br>$3.50</p>
+                </button>
+                <button class="btn_tip">
                     <p>30%<br>$5.55</p>
                 </button>
             </div>
@@ -129,19 +143,17 @@
 
 <div id="container_payment_method" class="col_10_left">
     <h4>Payment Method</h4>
-    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></div>
-    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_applepay.png" alt="Press here to select Apple Pay"><p class="font_body">Apple Pay</p></div>
-    <div class="card_payment_xl" onclick="selectPaymentMethod.call(this)"><img src="images/img_payment_method_cash.svg" alt="Press here to select Cash"><p class="font_body">Cash</p></div>
+    <button class="card_payment_xl card_payment_selected"><img src="images/img_payment_method_visa.svg" alt="Press here to select Visa"><p class="font_body">Ending in 1234</p></button>
+    <button class="card_payment_xl"><img src="images/img_payment_method_applepay.png" alt="Press here to select Apple Pay"><p class="font_body">Apple Pay</p></button>
+    <button class="card_payment_xl"><img src="images/img_payment_method_cash.svg" alt="Press here to select Cash"><p class="font_body">Cash</p></button>
     <button class="btn_lg btn_secondary">+ Add payment method</button>
     <br>
     <button id="btn_confirm_payment" class="btn_xxl">Place Order - Total $25.32</button>
     <button class="btn_xxl btn_cancel" onclick="location.href='home.html';">Cancel</button>
 </div> <!-- End of Payment Method -->
 
- <!-- Script - Open Modal -->
-
  <script>
-    // Get the modal
+    // Modal - Payment Confirmation
     var modal = document.getElementById("modal_confirm_payment");
     
     // Get the button that opens the modal
@@ -165,6 +177,32 @@
       if (event.target == modal) {
         modal.style.display = "none";
       }
+    }
+</script>
+
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("tip_buttons");
+    var btns = header.getElementsByClassName("btn_tip");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("btn_tip_selected");
+      current[0].className = current[0].className.replace("btn_tip_selected", "");
+      this.className += " btn_tip_selected";
+      });
+    }
+</script>
+
+<script>
+    // Add active class to the current payment method
+    var header = document.getElementById("container_payment_method");
+    var btns = header.getElementsByClassName("card_payment_xl");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("card_payment_selected");
+      current[0].className = current[0].className.replace("card_payment_selected", "");
+      this.className += " card_payment_selected";
+      });
     }
 </script>
 
