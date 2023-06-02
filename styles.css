@@ -1384,6 +1384,7 @@ input[type='radio'] {
     margin: 0 0 0.5rem 0;
     }
 .btn_profile > p {
+    color: #000;
     text-align: center;
     }
 .btn_profile a:visited, .btn_profile a:active {
