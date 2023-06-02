@@ -1089,11 +1089,11 @@ input[type='radio'] {
     }
 .tip_buttons {
     grid-area: b;
-    /* white-space: nowrap;  */
+    white-space: nowrap; 
     grid-column: 1 / 11;
     text-align: center;
     justify-items: baseline;
-    border: 1px solid green;
+    border: 1px solid aqua;
     max-width: 100vw;
     /* width: 80vw; */
     }
