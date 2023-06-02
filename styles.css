@@ -1031,6 +1031,32 @@ input[type='radio'] {
 
 /* Screen - Order Summary */
 
+/* Tip Buttons v2 */
+
+.btn_tip {
+    color: #000;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    margin: 0 0.5rem 0 0.5rem;
+    max-width: 18vw;
+    background-color: #D5E2CD;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    }
+.btn_tip_selected {
+    color: #fff;
+    font-weight: 400;
+    background-color: #F68A58;
+    border: 1px solid #F68A58;
+    }
+.btn_tip a:visited, .btn_sm a:active {
+    color: #000;
+    }
+
 /* Tip Buttons */
 
 .container_tip {
@@ -1059,7 +1085,7 @@ input[type='radio'] {
     margin: 0 0 1rem 0;
     text-align: center;
     }
-.btn_sm {
+/* .btn_sm {
     color: #000;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 1rem;
@@ -1081,7 +1107,7 @@ input[type='radio'] {
     }
 .btn_sm a:visited, .btn_sm a:active {
     color: #000;
-    }
+    } */
 .tip_buttons {
     grid-area: c;
     white-space: nowrap; 
@@ -1168,6 +1194,7 @@ input[type='radio'] {
     padding: 0 0 0 1rem;
     }
 .card_payment_xl {
+    cursor: pointer;
     display: grid;
     grid-area: auto / 1 / auto / -1;
     grid-template-areas:
@@ -1177,7 +1204,9 @@ input[type='radio'] {
     margin: 0 0 1rem 0;
     border: 2px solid #ccc;
     border-radius: 10px;
-    cursor: pointer;
+    width: 84vw;
+    max-width: 24rem;
+    background-color: #fff;
     }
 .card_payment_xl img {
     grid-area: a;
@@ -1186,11 +1215,17 @@ input[type='radio'] {
     }
 .card_payment_xl p {
     grid-area: b;
+    justify-self: first baseline;
+    align-self: last baseline;
+    /* text-align: left; */
     }
 .card_payment_selected, .card_payment_selected p {
     color: #fff;
     font-weight: 500;
     background-color: #F68A58;
+    }
+.card_payment_xl a:visited, .card_payment_xl a:active {
+    color: #fff;
     }
 #container_payment_method .btn_lg {
     margin: 0 0 2rem 0;
