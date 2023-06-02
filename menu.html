@@ -19,9 +19,9 @@
       <div class="parent">
 
         <div class="container_header">
-            <div class="btn_back hide"><img src="images/btn_back_arrow_default.svg" alt="Button - Back"/></div>
-            <div class="header_screen_title"><img src="images/btn_feastly_logo.png" onclick="location.href='home.html';"></div>
-            <div class="btn_avatar"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
+            <div class="btn_back hide"><img src="images/btn_back_arrow_default.svg" alt="Button - Back" onclick="history.back()"></div>
+            <div class="header_logo" onclick="location.href='home.html';"><img src="images/btn_feastly_logo.png" alt="Button - Home"></div>
+            <div class="btn_bell"><img src="images/btn_bell_orange.svg" alt="Button - Alert Server"/></div>
         </div>
 
         <div id="container_subheader_splash" class="col_10">
@@ -46,7 +46,7 @@
 
         <div id="container_tabbed_nav" class="col_10">
             <!-- <button class="tab_lg tab_lg_selected" onclick="openCategory('Breakfast')"><span>Breakfast</span><br></button> -->
-            <button class="tab_lg" onclick="openCategory('Breakfast')"><span>Breakfast</span><br></button>
+            <button class="tab_lg tab_lg_selected" onclick="openCategory('Breakfast')"><span>Breakfast</span><br></button>
             <button class="tab_lg" onclick="openCategory('Shares')">Shares<br></button>
             <button class="tab_lg" onclick="openCategory('LunchAndDinner')">Lunch & Dinner</button>
             <button class="tab_lg" onclick="openCategory('Beverages')">Beverages</button>
@@ -306,14 +306,26 @@
       </div> <!-- End of Footer Nav -->
 
     </div> <!-- End of parent -->
-
-    <!-- Add link to Container-Menu -->
     
-    <script>
-        document.getElementById('container_menu').addEventListener('click', function() {
-        location.href = 'menu_item.html'
-        }, false);
-    </script>
+<script>
+    // Add link to Container-Menu
+    document.getElementById('container_menu').addEventListener('click', function() {
+    location.href = 'menu_item.html'
+    }, false);
+</script>
+
+<script>
+    // Add active class to the current tab
+    var header = document.getElementById("container_tabbed_nav");
+    var btns = header.getElementsByClassName("tab_lg");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("tab_lg_selected");
+      current[0].className = current[0].className.replace("tab_lg_selected", "");
+      this.className += " tab_lg_selected";
+      });
+    }
+</script>
 
 </body>
 </html>
