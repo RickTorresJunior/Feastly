@@ -1491,6 +1491,7 @@ input[type='radio'] {
     filter: drop-shadow(0 0 1rem #d7d7d7);
     }
 .container_footer button {
+    color: #000;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -1522,10 +1523,10 @@ input[type='radio'] {
     position: absolute;
     pointer-events: none;
     }
-.btn_footer_nav a:visited, .btn_profile a:active {
-    color: #000;
-    }
 .footer_nav_selected {
     font-weight: 800;
     color: #F68A58;
+    }
+.btn_footer_nav a:visited, .btn_profile a:active {
+    color: #000;
     }
