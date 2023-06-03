@@ -1478,6 +1478,8 @@ input[type='radio'] {
 .footer2 {
     z-index:3;
     display: grid;
+    grid-template-areas:
+    "a a b b c c d d";
     grid-column: 1 / 11;
     position: fixed;
     left: 0;
@@ -1497,27 +1499,23 @@ input[type='radio'] {
     border: none;
 }
 #footer_btn_01 {
-    grid-area: 1 / 2 / 2 / 4;
-    border: 1px solid green;
+    grid-area: a;
 }
 #footer_btn_02 {
-    grid-area: 1 / 4 / 2 / 6;
-    border: 1px solid green;
+    grid-area: b;
 }
 #footer_btn_03 {
-    grid-area: 1 / 6 / 2 / 8;
-    border: 1px solid green;
+    grid-area: c;
 }
 #footer_btn_04 {
-    grid-area: 1 / 8 / 2 / 10;
-    border: 1px solid green;
+    grid-area: d;
 }
 .footer_btn_img {
     /* display: block;
     margin: 0 auto 0 auto;
     padding: 0 0 0.5rem 0; */
     height: 1.5rem;
-    border: 1px solid red;
+    border:3px solid purple;
     }
 /* .footer2 button {
     width: 21.5%;
