@@ -1437,7 +1437,7 @@ input[type='radio'] {
     white-space: nowrap;
     text-transform: uppercase;
     font-weight: 400;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0.75rem 1rem 0.5rem 1rem;
     background-color: #fff;
     border: none;
     }
