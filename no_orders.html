@@ -38,9 +38,21 @@
 
     <!-- Footer Nav -->
 
-    <div class="footer">
-        <button onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><span>Home</span></button><button onclick="location.href='qrscan_instructions.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><span>QR Scan</span></button><button onclick="location.href='no_orders.html';"><img src="images/icon_nav_myorder_active.svg" alt="Navigation Button - My Order"><span class="footer_nav_selected">My Order</span></button><button onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><span>Profile</span></button>
-    </div><!-- End of Footer Nav-->
+    <div class="container_footer">
+        <div id="btn_footer_home">
+        <button class="btn_footer_nav" onclick="location.href='home.html';"><img src="images/icon_nav_home_default.svg" alt="Navigation Button - Home"><p>Home</p></button>
+        </div>
+        <div id="btn_footer_qrscan">
+        <button class="btn_footer_nav" onclick="location.href='qrscan_instructions.html';"><img src="images/icon_nav_qrcode_default.svg" alt="Navigation Button - QR Scan"><p>QR Scan</p></button>
+        </div>
+        <div id="btn_footer_myorder">
+        <button class="btn_footer_nav"><img src="images/icon_nav_myorder_default.svg" alt="Navigation Button - My Order"><p>My Order</p></button>
+        </div>
+        <div id="btn_footer_profile">
+        <button class="btn_footer_nav" onclick="location.href='profile.html';"><img src="images/icon_nav_profile_default.svg" alt="Navigation Button - User Profile"><p>Profile</p></button>
+        </div>
+    </div> <!-- End of Footer -->
+
 </div> <!-- End of parent -->
 </body>
 </html>
