@@ -1450,11 +1450,18 @@ input[type='radio'] {
     padding: 1rem 1rem 1rem 1rem;
     margin: 0 .3rem 0 .3rem;
     border-radius: 0px;
-    border: 0px solid #000000;
+    border: none;
+    /* border: 1px solid #000000; */
     }
+/* .footer > button > span {
+    color: green;
+    text-align: left;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+} */
 .footer img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     padding: 0 0 0.5rem 0;
     height: 1.5rem;
     width: auto;
@@ -1465,3 +1472,82 @@ input[type='radio'] {
     font-weight: 800;
     color: #F68A58;
     }
+
+/* Section - Footer Redesign */
+
+.footer2 {
+    z-index:3;
+    display: grid;
+    grid-column: 1 / 11;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    /* width: 100%; */
+    /* max-height: 8rem; */
+    color: #fff;
+    background-color: #fff;
+    text-align: center;
+    filter: drop-shadow(0 0 1rem #d7d7d7);
+    border: 1px solid black;
+    }
+.footer2 button {
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #fff;
+    border: none;
+}
+#footer_btn_01 {
+    grid-area: 1 / 2 / 2 / 4;
+    border: 1px solid green;
+}
+#footer_btn_02 {
+    grid-area: 1 / 4 / 2 / 6;
+    border: 1px solid green;
+}
+#footer_btn_03 {
+    grid-area: 1 / 6 / 2 / 8;
+    border: 1px solid green;
+}
+#footer_btn_04 {
+    grid-area: 1 / 8 / 2 / 10;
+    border: 1px solid green;
+}
+.footer_btn_img {
+    /* display: block;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0.5rem 0; */
+    height: 1.5rem;
+    border: 1px solid red;
+    }
+/* .footer2 button {
+    width: 21.5%;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #000;
+    font-size: 0.7rem;
+    font-weight: 400;
+    background-color: #ffffff;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0 .3rem 0 .3rem;
+    border-radius: 0px;
+    border: 1px solid #000000;
+    }
+.footer2 > button > span {
+    color: green;
+    text-align: left;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0 0;
+}
+.footer2 > button > img {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 0 0 0.5rem 0;
+    height: 1.5rem;
+    width: auto;
+    }
+.footer_nav_selected {
+    font-weight: 800;
+    color: #F68A58;
+    } */
+
