@@ -709,7 +709,8 @@ input[type='radio'] {
     }
 .img_carousel {
     display: inline-block;
-    width: 10rem;
+    /* width: 10rem; */
+    width: 37vw;
     padding: 0 0 0 0;
     margin: 0 0.5rem 0 0;
     border-radius: 10px;
