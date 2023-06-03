@@ -1171,6 +1171,7 @@ input[type='radio'] {
 /* Container - Payment Method */
 
 #container_payment_method {
+    display: grid;
     padding: 1rem 2rem 0 2rem;
     margin: -8rem 0 0 0;
     border-radius: 40px 40px 0 0;
@@ -1178,6 +1179,13 @@ input[type='radio'] {
     border-bottom: none;
     box-shadow: 0px 0px 15px 0px rgb(212, 212, 212);
     }
+#container_payment_method button {
+    max-width: 24rem;
+}
+#container_payment_method .btn_lg {
+    white-space: nowrap;
+    width: 14rem;
+}
 #container_payment_method h4 {
     text-align: left;
     padding: 0 0 0 1rem;
@@ -1191,7 +1199,6 @@ input[type='radio'] {
     border: 2px solid #ccc;
     border-radius: 10px;
     width: 84vw;
-    max-width: 24rem;
     min-width: 14rem;
     background-color: #fff;
     }
